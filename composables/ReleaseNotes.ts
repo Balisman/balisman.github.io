@@ -27,6 +27,32 @@ export type Release = {
 export function UseReleases(): Release[] {
   return [
     {
+      version: "1.2.33",
+      date: "2026-05-17",
+      changes: [
+        { type: "tpl", id: "add_record", game: "th11", shot: "ReimuA", player:"HalRin" },
+        { type: "tpl", id: "add_record", game: "th12", shot: "ReimuA", player:"murei" },
+        { type: "tpl", id: "add_record", game: "th12", shot: "MarisaA", player:"murei" },
+        { type: "tpl", id: "add_record", game: "th12", shot: "SanaeB", player:"murei" },
+        { type: "tpl", id: "add_record", game: "th12", shot: "SanaeB", player:"burata" },
+        { type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"がそりん" },
+        { type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"gake" },
+        { type: "tpl", id: "add_record", game: "th14", shot: "MarisaB", player:"TRDario" },
+        { type: "tpl", id: "add_record", game: "th15", shot: "Reisen", player:"idtn" },
+    	{ type: "tpl", id: "add_record", game: "th17", shot: "ReimuO", player:"Altair" },
+    	{ type: "tpl", id: "add_record", game: "th17", shot: "ReimuO", player:"Balisman" },
+    	{ type: "tpl", id: "add_record", game: "th17", shot: "MarisaO", player:"幽谷もこ" },
+    	{ type: "tpl", id: "add_record", game: "th17", shot: "YoumuO", player:"Anna says hi" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuR2", player:"幽谷もこ" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuY2", player:"はちじ" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaB2", player:"はんぺん" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG1", player:"はちじ" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG1", player:"節水源一朗" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"節水源一朗" },
+    	{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"Ecoさわ" },
+      ],
+    },
+    {
       version: "1.2.32",
       date: "2026-05-09",
       changes: [

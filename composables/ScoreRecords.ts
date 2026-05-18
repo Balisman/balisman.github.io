@@ -234,6 +234,13 @@ export function useScoreRecords() {
           replay: "th17_ud0079.rpy",
           detail: "-",
         },
+        ReimuO: {
+          score: 2023472380,
+          status: "great",
+          date: "2026-05-17T15:30:00",
+          replay: "th17_ud0088.rpy",
+          detail: "-",
+        },
         YoumuO: {
           score: 1600731190,
           status: "good",
@@ -381,10 +388,10 @@ export function useScoreRecords() {
     "Anna says hi": {
       th17: {
         YoumuO: {
-          score: 2132250350,
+          score: 2301373240,
           status: "great",
-          date: "2026-04-28T15:30:00",
-          replay: "th17_ud0084.rpy",
+          date: "2026-05-10T15:30:00",
+          replay: "th17_ud0087.rpy",
           detail: "-",
         },
       },
@@ -818,10 +825,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         ReimuO: {
-          score: 2718189340,
+          score: 2728251450,
           status: "excellent",
-          date: "2026-02-08T15:30:00",
-          replay: "th17_ud0063.rpy",
+          date: "2026-05-17T15:30:00",
+          replay: "th17_ud0089.rpy",
           detail: "-",
         },
         ReimuE: {
@@ -1108,10 +1115,10 @@ export function useScoreRecords() {
     burata: {
       th12: {
         SanaeB: {
-          score: 523153740,
-          status: "good",
-          date: "2026-03-01T15:30:00",
-          replay: "th12_ud0132.rpy",
+          score: 636732510,
+          status: "great",
+          date: "2026-05-14T15:30:00",
+          replay: "th12_ud0137.rpy",
           detail: "-",
         },
       },
@@ -1877,6 +1884,17 @@ export function useScoreRecords() {
         },
       },
     },
+    gake: {
+      th128: {
+        Cirno: {
+          score: 90610270,
+          status: "good",
+          date: "2026-05-16T15:30:00",
+          replay: "th128_ud0020.rpy",
+          detail: "-",
+        },
+      },
+    },
     garm: {
       th07Ex: {
         ReimuB: {
@@ -2049,6 +2067,17 @@ export function useScoreRecords() {
           status: "good",
           date: "2018-06-24T15:30:00",
           replay: "th11_ud0157.rpy",
+          detail: "-",
+        },
+      },
+    },
+    HalRin: {
+      th11: {
+        ReimuA: {
+          score: 1012933180,
+          status: "good",
+          date: "2018-05-14T15:30:00",
+          replay: "th11_ud0169.rpy",
           detail: "-",
         },
       },
@@ -2633,10 +2662,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         Reisen: {
-          score: 1022585880,
+          score: 1041437120,
           status: "excellent",
-          date: "2026-05-02T15:30:00",
-          replay: "th15_ud0041.rpy",
+          date: "2026-05-13T15:30:00",
+          replay: "th15_ud0042.rpy",
           detail: "-",
         },
       },
@@ -4107,6 +4136,31 @@ export function useScoreRecords() {
           status: "good",
           date: "2017-02-23T15:30:00",
           replay: "th15_ud0023.rpy",
+          detail: "-",
+        },
+      },
+    },
+    murei: {
+      th12: {
+        ReimuA: {
+          score: 639847740,
+          status: "great",
+          date: "2026-05-01T15:30:00",
+          replay: "th12_ud0138.rpy",
+          detail: "-",
+        },
+        MarisaA: {
+          score: 687313540,
+          status: "great",
+          date: "2026-04-30T15:30:00",
+          replay: "th12_ud0139.rpy",
+          detail: "-",
+        },
+        SanaeB: {
+          score: 663005910,
+          status: "great",
+          date: "2026-05-06T15:30:00",
+          replay: "th12_ud0140.rpy",
           detail: "-",
         },
       },
@@ -5836,10 +5890,10 @@ export function useScoreRecords() {
 	  },
       th14: {
         MarisaB: {
-          score: 1026409290,
-          status: "good",
-          date: "2026-04-10T15:30:00",
-          replay: "th14_ud0087.rpy",
+          score: 1201237920,
+          status: "excellent",
+          date: "2026-05-13T15:30:00",
+          replay: "th14_ud0091.rpy",
           detail: "-",
         },
       },
@@ -8083,7 +8137,25 @@ export function useScoreRecords() {
         },
       },
     },
-    はやて: {
+    はちじ: {
+      th20: {
+        ReimuY2: {
+          score: 641531820,
+          status: "good",
+          date: "2026-05-15T15:30:00",
+          replay: "th20_ud0074.rpy",
+          detail: "-",
+        },
+        MarisaG1: {
+          score: 715489790,
+          status: "great",
+          date: "2026-05-12T15:30:00",
+          replay: "th20_ud0073.rpy",
+          detail: "-",
+        },
+      },
+    },
+	はやて: {
       th07Ex: {
         ReimuB: {
           score: 1247990590,
@@ -8121,7 +8193,18 @@ export function useScoreRecords() {
         },
       },
     },
-    ひなぶ: {
+    はんぺん: {
+      th20: {
+        MarisaB2: {
+          score: 622466090,
+          status: "good",
+          date: "2026-03-31T15:30:00",
+          replay: "th20_ud0075.rpy",
+          detail: "-",
+        },
+      },
+    },
+	ひなぶ: {
       th14: {
         MarisaB: {
           score: 1135071980,
@@ -9921,17 +10004,17 @@ export function useScoreRecords() {
     節水源一朗: {
       th20: {
         MarisaY2: {
-          score: 634571780,
+          score: 660345470,
           status: "good",
-          date: "2026-03-26T15:30:00",
-          replay: "th20_ud0063.rpy",
+          date: "2026-05-16T15:30:00",
+          replay: "th20_ud0071.rpy",
           detail: "-",
         },
         MarisaG1: {
-          score: 640634740,
+          score: 670472090,
           status: "good",
-          date: "2026-03-03T15:30:00",
-          replay: "th20_ud0059.rpy",
+          date: "2026-05-17T15:30:00",
+          replay: "th20_ud0072.rpy",
           detail: "-",
         },
       },
@@ -10109,10 +10192,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         MarisaO: {
-          score: 1527866160,
+          score: 1968238620,
           status: "good",
-          date: "2025-07-19T15:30:00",
-          replay: "th17_ud0035.rpy",
+          date: "2026-05-14T15:30:00",
+          replay: "th17_ud0090.rpy",
           detail: "-",
         },
         YoumuO: {
@@ -10148,10 +10231,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         ReimuR2: {
-          score: 745246180,
+          score: 764351480,
           status: "great",
-          date: "2026-02-21T15:30:00",
-          replay: "th20_ud0047.rpy",
+          date: "2026-05-16T15:30:00",
+          replay: "th20_ud0069.rpy",
           detail: "-",
         },
         ReimuB1: {
