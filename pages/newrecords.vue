@@ -109,7 +109,7 @@ const columns = [
       return h(
         "a",
         {
-          href: `https://thex-score.net/replays/${row.getValue(
+          href: `https://balisman.github.io/replays/${row.getValue(
             "game"
           )}/${row.getValue("replay")}`,
           download: row.getValue("replay"),

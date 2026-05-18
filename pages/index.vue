@@ -490,7 +490,7 @@ const columns = reactive([
       return h(
         "a",
         {
-          href: `https://thex-score.net/replays/${game}/${replay}`,
+          href: `https://balisman.github.io/replays/${game}/${replay}`,
           download: replay,
           target: "_blank",
           rel: "noopener noreferrer",
