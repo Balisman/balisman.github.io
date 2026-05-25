@@ -27,6 +27,27 @@ export type Release = {
 export function UseReleases(): Release[] {
   return [
     {
+      version: "1.2.35",
+      date: "2026-05-24",
+      changes: [
+        { type: "tpl", id: "add_record", game: "th07EX", shot: "SakuyaB", player:"いな" },
+        { type: "tpl", id: "add_record", game: "th07EX", shot: "ReimuB", player:"にぼし" },
+        { type: "tpl", id: "add_record", game: "th07Ph", shot: "ReimuB", player:"ASAPIN" },
+        { type: "tpl", id: "add_record", game: "th12", shot: "MarisaA", player:"ニャムニャム" },
+        { type: "tpl", id: "add_record", game: "th15", shot: "Reimu", player:"Oscar" },
+        { type: "tpl", id: "add_record", game: "th15", shot: "Reisen", player:"idtn" },
+        { type: "tpl", id: "add_record", game: "th15", shot: "Reisen", player:"Zelyx" },
+        { type: "tpl", id: "add_record", game: "th15", shot: "Marisa", player:"Zelyx" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Sakuya", player:"Altair" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Sanae", player:"gryphen" },
+        { type: "tpl", id: "add_record", game: "th20", shot: "ReimuG1", player:"ボニスト" },
+        { type: "tpl", id: "add_record", game: "th20", shot: "ReimuG1", player:"はちじ" },
+        { type: "tpl", id: "add_record", game: "th20", shot: "ReimuG1", player:"幽谷もこ" },
+        { type: "tpl", id: "add_record", game: "th20", shot: "MarisaB2", player:"幽谷もこ" },
+        { type: "tpl", id: "add_record", game: "th20", shot: "MarisaY1", player:"幽谷もこ" },
+      ],
+    },
+    {
       version: "1.2.34",
       date: "2026-05-19",
       changes: [

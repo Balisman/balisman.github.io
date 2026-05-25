@@ -258,10 +258,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         Sakuya: {
-          score: 5211676890,
-          status: "good",
-          date: "2026-04-01T15:30:00",
-          replay: "th18_ud0033.rpy",
+          score: 7532862030,
+          status: "great",
+          date: "2026-05-22T15:30:00",
+          replay: "th18_ud0040.rpy",
           detail: "-",
         },
       },
@@ -474,6 +474,15 @@ export function useScoreRecords() {
       },
     },
     ASAPIN: {
+      th07Ph: {
+        ReimuB: {
+          score: 1312362240,
+          status: "good",
+          date: "2004-04-26T15:30:00",
+          replay: "th7_ud1069.rpy",
+          detail: "-",
+        },
+      },
       th08: {
         Marisa: {
           score: 2509098720,
@@ -2028,10 +2037,10 @@ export function useScoreRecords() {
     gryphen: {
       th18: {
         Sanae: {
-          score: 3064148990,
+          score: 3223469530,
           status: "good",
-          date: "2026-04-17T15:30:00",
-          replay: "th18_ud0037.rpy",
+          date: "2026-04-19T15:30:00",
+          replay: "th18_ud0041.rpy",
           detail: "-",
         },
       },
@@ -2684,10 +2693,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         Reisen: {
-          score: 1041437120,
+          score: 1077513020,
           status: "excellent",
-          date: "2026-05-13T15:30:00",
-          replay: "th15_ud0042.rpy",
+          date: "2026-05-23T15:30:00",
+          replay: "th15_ud0045.rpy",
           detail: "-",
         },
       },
@@ -4383,84 +4392,6 @@ export function useScoreRecords() {
         },
       },
     },
-    nyamu: {
-      th08: {
-        Border: {
-          score: 2649851390,
-          status: "good",
-          date: "2009-10-23T15:30:00",
-          replay: "th8_ud0035.rpy",
-          detail: "-",
-        },
-        Scarlet: {
-          score: 2532529490,
-          status: "good",
-          date: "2009-10-10T15:30:00",
-          replay: "th8_ud0037.rpy",
-          detail: "-",
-        },
-        Netherworld: {
-          score: 2691608320,
-          status: "good",
-          date: "2010-02-17T15:30:00",
-          replay: "th8_ud0040.rpy",
-          detail: "-",
-        },
-        Yukari: {
-          score: 1866135310,
-          status: "good",
-          date: "2009-11-20T15:30:00",
-          replay: "th8_ud0072.rpy",
-          detail: "-",
-        },
-        Remilia: {
-          score: 1949613690,
-          status: "good",
-          date: "2010-02-24T15:30:00",
-          replay: null,
-          detail: "2010年5月4週",
-        },
-        Youmu: {
-          score: 2848766270,
-          status: "great",
-          date: "2009-11-28T15:30:00",
-          replay: "th8_ud0029.rpy",
-          detail: "-",
-        },
-        Yuyuko: {
-          score: 1813178110,
-          status: "good",
-          date: "2009-08-21T15:30:00",
-          replay: "th8_ud0074.rpy",
-          detail: "-",
-        },
-      },
-      th10: {
-        ReimuA: {
-          score: 965591520,
-          status: "good",
-          date: "2010-01-31T15:30:00",
-          replay: null,
-          detail: "2010年1月1～2週",
-        },
-      },
-      th12: {
-        SanaeA: {
-          score: 607704640,
-          status: "great",
-          date: "2011-02-13T15:30:00",
-          replay: "th12_ud0058.rpy",
-          detail: "-",
-        },
-        SanaeB: {
-          score: 712449110,
-          status: "excellent",
-          date: "2010-12-27T15:30:00",
-          replay: "th12_ud0005.rpy",
-          detail: "-",
-        },
-      },
-    },
     nnh: {
       th10: {
         MarisaB: {
@@ -4761,10 +4692,10 @@ export function useScoreRecords() {
       },
       th15: {
         Reimu: {
-          score: 1187453600,
+          score: 1200861530,
           status: "excellent",
-          date: "2026-05-18T15:30:00",
-          replay: "th15_ud0043.rpy",
+          date: "2026-05-23T15:30:00",
+          replay: "th15_ud0046.rpy",
           detail: "-",
         },
         Marisa: {
@@ -6615,6 +6546,24 @@ export function useScoreRecords() {
         },
       },
     },
+    Zelyx: {
+      th15: {
+        Marisa: {
+          score: 844561760,
+          status: "good",
+          date: "2015-09-25T15:30:00",
+          replay: "th15_ud0047.rpy",
+          detail: "-",
+        },
+        Reisen: {
+          score: 989895730,
+          status: "great",
+          date: "2015-09-28T15:30:00",
+          replay: "th15_ud0048.rpy",
+          detail: "-",
+        },
+      },
+    },
     Zigzagwolf: {
       th14: {
         MarisaB: {
@@ -7181,10 +7130,10 @@ export function useScoreRecords() {
           detail: "リプレイ不明",
         },
         SakuyaB: {
-          score: 1412782710,
+          score: 1417116120,
           status: "excellent",
-          date: "2016-07-03T15:30:00",
-          replay: "th7_ud0026.rpy",
+          date: "2026-05-22T15:30:00",
+          replay: "th7_ud0051.rpy",
           detail: "-",
         },
       },
@@ -7357,10 +7306,10 @@ export function useScoreRecords() {
       },
       th128: {
         Cirno: {
-          score: 98008080,
-          status: "great",
-          date: "2026-05-06T15:30:00",
-          replay: "th128_ud0018.rpy",
+          score: 100418990,
+          status: "excellent",
+          date: "2026-05-15T15:30:00",
+          replay: "th128_ud0019.rpy",
           detail: "-",
         },
       },
@@ -7959,10 +7908,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         ReimuB: {
-          score: 1301526570,
+          score: 1333426780,
           status: "great",
-          date: "2006-05-28T15:30:00",
-          replay: "th7_ud0048.rpy",
+          date: "2025-11-10T15:30:00",
+          replay: "th7_ud0052.rpy",
           detail: "-",
         },
         MarisaA: {
@@ -8177,6 +8126,13 @@ export function useScoreRecords() {
           status: "good",
           date: "2026-05-15T15:30:00",
           replay: "th20_ud0074.rpy",
+          detail: "-",
+        },
+        ReimuG1: {
+          score: 626404460,
+          status: "good",
+          date: "2026-05-23T15:30:00",
+          replay: "th20_ud0077.rpy",
           detail: "-",
         },
         MarisaG1: {
@@ -9264,6 +9220,66 @@ export function useScoreRecords() {
       },
     },
     ニャムニャム: {
+      th08: {
+        Border: {
+          score: 2649851390,
+          status: "good",
+          date: "2009-10-23T15:30:00",
+          replay: "th8_ud0035.rpy",
+          detail: "-",
+        },
+        Scarlet: {
+          score: 2532529490,
+          status: "good",
+          date: "2009-10-10T15:30:00",
+          replay: "th8_ud0037.rpy",
+          detail: "-",
+        },
+        Netherworld: {
+          score: 2691608320,
+          status: "good",
+          date: "2010-02-17T15:30:00",
+          replay: "th8_ud0040.rpy",
+          detail: "-",
+        },
+        Yukari: {
+          score: 1866135310,
+          status: "good",
+          date: "2009-11-20T15:30:00",
+          replay: "th8_ud0072.rpy",
+          detail: "-",
+        },
+        Remilia: {
+          score: 1949613690,
+          status: "good",
+          date: "2010-02-24T15:30:00",
+          replay: null,
+          detail: "2010年5月4週",
+        },
+        Youmu: {
+          score: 2848766270,
+          status: "great",
+          date: "2009-11-28T15:30:00",
+          replay: "th8_ud0029.rpy",
+          detail: "-",
+        },
+        Yuyuko: {
+          score: 1813178110,
+          status: "good",
+          date: "2009-08-21T15:30:00",
+          replay: "th8_ud0074.rpy",
+          detail: "-",
+        },
+      },
+      th10: {
+        ReimuA: {
+          score: 965591520,
+          status: "good",
+          date: "2010-01-31T15:30:00",
+          replay: null,
+          detail: "2010年1月1～2週",
+        },
+      },
       th12: {
         ReimuA: {
           score: 670462130,
@@ -9280,10 +9296,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         MarisaA: {
-          score: 710608440,
+          score: 736291170,
           status: "excellent",
-          date: "2016-12-19T15:30:00",
-          replay: "th12_ud0007.rpy",
+          date: "2026-05-13T15:30:00",
+          replay: "th12_ud0141.rpy",
           detail: "-",
         },
         MarisaB: {
@@ -9445,6 +9461,13 @@ export function useScoreRecords() {
           status: "good",
           date: "2026-04-23T15:30:00",
           replay: "th20_ud0068.rpy",
+          detail: "-",
+        },
+        ReimuG1: {
+          score: 656088920,
+          status: "good",
+          date: "2026-05-23T15:30:00",
+          replay: "th20_ud0076.rpy",
           detail: "-",
         },
         MarisaR2: {
@@ -10306,10 +10329,10 @@ export function useScoreRecords() {
           detail: "-",
         },
         ReimuG1: {
-          score: 783282590,
-          status: "great",
-          date: "2026-03-21T15:30:00",
-          replay: "th20_ud0061.rpy",
+          score: 820071410,
+          status: "excellent",
+          date: "2026-05-17T15:30:00",
+          replay: "th20_ud0078.rpy",
           detail: "-",
         },
         ReimuG2: {
@@ -10341,17 +10364,17 @@ export function useScoreRecords() {
           detail: "-",
         },
         MarisaB2: {
-          score: 755748860,
+          score: 765101070,
           status: "great",
-          date: "2026-02-10T15:30:00",
-          replay: "th20_ud0038.rpy",
+          date: "2026-05-23T15:30:00",
+          replay: "th20_ud0079.rpy",
           detail: "-",
         },
         MarisaY1: {
-          score: 688974770,
-          status: "good",
-          date: "2026-01-10T15:30:00",
-          replay: "th20_ud0032.rpy",
+          score: 780873290,
+          status: "great",
+          date: "2026-05-17T15:30:00",
+          replay: "th20_ud0080.rpy",
           detail: "-",
         },
         MarisaY2: {
