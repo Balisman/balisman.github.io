@@ -27,6 +27,27 @@ export type Release = {
 export function UseReleases(): Release[] {
   return [
     {
+      version: "1.2.36",
+      date: "2026-05-24",
+      changes: [
+        { type: "tpl", id: "add_record", game: "th07Ph", shot: "ReimuB", player:"shobonzdc" },
+        { type: "tpl", id: "add_record", game: "th12", shot: "ReimuA", player:"Lorenzo" },
+        { type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"ボニスト" },
+        { type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"がそりん" },
+        { type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"gake" },
+        { type: "tpl", id: "add_record", game: "th14", shot: "MarisaB", player:"wimirei" },
+        { type: "tpl", id: "add_record", game: "th17", shot: "YoumuO", player:"Balisman" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Sakuya", player:"Altair" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Sakuya", player:"Balisman" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Sakuya", player:"工藤氏。" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Sakuya", player:"幽谷もこ" },
+        { type: "tpl", id: "add_record", game: "th18", shot: "Marisa", player:"幽谷もこ" },
+        { type: "tpl", id: "add_record", game: "th20", shot: "ReimuB1", player:"幽谷もこ" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG1", player:"幽谷もこ" },
+		
+      ],
+    },
+    {
       version: "1.2.35",
       date: "2026-05-24",
       changes: [
@@ -36,8 +57,6 @@ export function UseReleases(): Release[] {
         { type: "tpl", id: "add_record", game: "th12", shot: "MarisaA", player:"ニャムニャム" },
         { type: "tpl", id: "add_record", game: "th15", shot: "Reimu", player:"Oscar" },
         { type: "tpl", id: "add_record", game: "th15", shot: "Reisen", player:"idtn" },
-        { type: "tpl", id: "add_record", game: "th15", shot: "Reisen", player:"Zelyx" },
-        { type: "tpl", id: "add_record", game: "th15", shot: "Marisa", player:"Zelyx" },
         { type: "tpl", id: "add_record", game: "th18", shot: "Sakuya", player:"Altair" },
         { type: "tpl", id: "add_record", game: "th18", shot: "Sanae", player:"gryphen" },
         { type: "tpl", id: "add_record", game: "th20", shot: "ReimuG1", player:"ボニスト" },
