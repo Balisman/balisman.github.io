@@ -27,16 +27,38 @@ export type Release = {
 export function UseReleases(): Release[] {
   return [
     {
+      version: "1.2.38",
+      date: "2026-06-25",
+      changes: [
+		{ type: "tpl", id: "add_record", game: "th12", shot: "ReimuA", player:"Crispy" },
+		{ type: "tpl", id: "add_record", game: "th12", shot: "SanaeB", player:"Echo Alert" },
+		{ type: "tpl", id: "add_record", game: "th14", shot: "ReimuA", player:"幽谷もこ" },
+		{ type: "tpl", id: "add_record", game: "th14", shot: "MarisaB", player:"幽谷もこ" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "ReimuW", player:"Borealis" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "ReimuO", player:"Balisman" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "ReimuE", player:"Borealis" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "MarisaW", player:"Borealis" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "MarisaO", player:"Balisman" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "MarisaE", player:"Borealis" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "YoumuW", player:"Borealis" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "YoumuE", player:"Borealis" },
+		{ type: "tpl", id: "add_record", game: "th18", shot: "Reimu", player:"Balisman" },
+		{ type: "tpl", id: "add_record", game: "th18", shot: "Sanae", player:"serenity" },
+		{ type: "tpl", id: "add_record", game: "th18", shot: "Sanae", player:"gryphen" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuY1", player:"norn" },
+      ],
+    },
+    {
       version: "1.2.37",
       date: "2026-06-10",
       changes: [
         { type: "tpl", id: "add_record", game: "th11", shot: "ReimuA", player:"Apo" },
         { type: "tpl", id: "add_record", game: "th11", shot: "ReimuB", player:"Oriens" },
         { type: "tpl", id: "add_record", game: "th11", shot: "MarisaA", player:"R24" },
-        { type: "tpl", id: "add_record", game: "th17", shot: "YoumuO", player:"Anna says hi" },
-        { type: "tpl", id: "add_record", game: "th17", shot: "MarisaO", player:"幽谷もこ" },
-        { type: "tpl", id: "add_record", game: "th20", shot: "ReimuY1", player:"幽谷もこ" },
-        { type: "tpl", id: "add_record", game: "th20", shot: "ReimuY1", player:"norn" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "YoumuO", player:"Anna says hi" },
+		{ type: "tpl", id: "add_record", game: "th17", shot: "MarisaO", player:"幽谷もこ" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuY1", player:"幽谷もこ" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuY1", player:"norn" },
       ],
     },
     {
