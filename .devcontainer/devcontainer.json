@@ -1,11 +1,11 @@
 {
-    "name": "thex-score",
+    "name": "balisman.github.io",
     "dockerComposeFile": [
         "docker-compose.yml",
         "local/docker-compose.yml"
     ],
     "service": "devcontainer",
-    "workspaceFolder": "/workspace/thex-score",
+    "workspaceFolder": "/workspace/balisman.github.io",
     "forwardPorts": [
         3000
     ],

@@ -3,10 +3,9 @@ services:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
-    # image: "thex-score-devcontainer:latest"
     command: "sleep infinity"
     volumes:
-      - ../:/workspace/thex-score:cached
+      - ../:/workspace/balisman.github.io:cached
       - ${HOME}/.gnupg:/home/node/.gnupg
       - ${HOME}/.ssh:/home/node/.ssh:ro
       - pnpm_store:/workspace/.pnpm-store

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /workspace/thex-score
+cd /workspace/balisman.github.io
 
 corepack pnpm install --frozen-lockfile --ignore-scripts --force 
 corepack pnpm exec nuxt prepare
