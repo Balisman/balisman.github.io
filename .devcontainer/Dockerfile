@@ -2,15 +2,8 @@ FROM mcr.microsoft.com/devcontainers/typescript-node:22@sha256:27a2d19026714b1d8
 
 RUN mkdir -p \
         /workspace/thex-score \
-        /workspace/.pnpm-store \
-        /home/node/.ssh \
-        /home/node/.codex \
-        /home/node/.vscode-server \
     && chown -R node:node \
         /workspace \
-        /home/node/.ssh \
-        /home/node/.codex \
-        /home/node/.vscode-server \
     && printf '\nexport GPG_TTY=$(tty)\n' >> /etc/bash.bashrc
 
 USER node
