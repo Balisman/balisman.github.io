@@ -4,6 +4,3 @@ services:
       - ${HOME}/.gnupg:/home/node/.gnupg
       - ${HOME}/.ssh:/home/node/.ssh:ro
       - ${HOME}/.codex:/home/node/.codex
-
-volumes:
-  codex_home:
