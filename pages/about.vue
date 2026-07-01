@@ -60,6 +60,7 @@
     </UCard>
 
     <!-- GOOD -->
+<div class="flex items-stretch ...">
     <UCard class="my-5">
       <template #header>
         <p>
@@ -69,7 +70,7 @@
           {{ $t("pages.about.threshold_scores.title") }}
         </p>
       </template>
-      <ul class="pl-5 space-y-0.5">
+      <ul class="pl-3 space-y-0.5">
         <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
           <UBadge
             class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
@@ -84,7 +85,60 @@
         </li>
       </ul>
     </UCard>
-
+	
+	    <UCard class="my-5">
+      <template #header>
+        <p>
+          <UBadge class="capitalize" variant="subtle" color="secondary">
+            {{
+              $t("global.threshold_score_names.great")
+            }}
+          </UBadge>
+          {{ $t("pages.about.threshold_scores.title") }}
+        </p>
+      </template>
+      <ul class="pl-3 space-y-0.5">
+        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
+          <UBadge
+            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+            :style="{
+              color: gamesMap[gameThreshold.game].color.txt,
+              backgroundColor: gamesMap[gameThreshold.game].color.bg,
+            }"
+          >
+            {{ $t(gamesMap[gameThreshold.game].name) }}
+          </UBadge>
+          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.great`) }}
+        </li>
+      </ul>
+    </UCard>
+	
+	    <UCard class="my-5">
+      <template #header>
+        <p>
+          <UBadge variant="subtle" color="success">
+            {{ $t("global.threshold_score_names.excellent") }}
+          </UBadge>
+          {{ $t("pages.about.threshold_scores.title") }}
+        </p>
+      </template>
+      <ul class="pl-3 space-y-0.5">
+        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
+          <UBadge
+            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+            :style="{
+              color: gamesMap[gameThreshold.game].color.txt,
+              backgroundColor: gamesMap[gameThreshold.game].color.bg,
+            }"
+          >
+            {{ $t(gamesMap[gameThreshold.game].name) }}
+          </UBadge>
+          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.excellent`) }}
+        </li>
+      </ul>
+    </UCard>
+	
+</div>
     <UCard class="my-5">
       <template #header>
         <p>
@@ -309,32 +363,6 @@
     </UCard>
 
     <!-- GREAT -->
-    <UCard class="my-5">
-      <template #header>
-        <p>
-          <UBadge class="capitalize" variant="subtle" color="secondary">
-            {{
-              $t("global.threshold_score_names.great")
-            }}
-          </UBadge>
-          {{ $t("pages.about.threshold_scores.title") }}
-        </p>
-      </template>
-      <ul class="pl-5 space-y-0.5">
-        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-          <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
-            :style="{
-              color: gamesMap[gameThreshold.game].color.txt,
-              backgroundColor: gamesMap[gameThreshold.game].color.bg,
-            }"
-          >
-            {{ $t(gamesMap[gameThreshold.game].name) }}
-          </UBadge>
-          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.great`) }}
-        </li>
-      </ul>
-    </UCard>
 
     <UCard class="my-5">
       <template #header>
@@ -384,30 +412,6 @@
     </UCard>
 
     <!-- EXCELLENT -->
-    <UCard class="my-5">
-      <template #header>
-        <p>
-          <UBadge variant="subtle" color="success">
-            {{ $t("global.threshold_score_names.excellent") }}
-          </UBadge>
-          {{ $t("pages.about.threshold_scores.title") }}
-        </p>
-      </template>
-      <ul class="pl-5 space-y-0.5">
-        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-          <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
-            :style="{
-              color: gamesMap[gameThreshold.game].color.txt,
-              backgroundColor: gamesMap[gameThreshold.game].color.bg,
-            }"
-          >
-            {{ $t(gamesMap[gameThreshold.game].name) }}
-          </UBadge>
-          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.excellent`) }}
-        </li>
-      </ul>
-    </UCard>
 
     <UCard class="my-5">
       <template #header>
