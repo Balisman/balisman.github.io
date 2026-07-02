@@ -44,10 +44,10 @@
       <template #header>
         <p>{{ $t("pages.about.compatible_games.title") }}</p>
       </template>
-      <ul class="pl-5 space-y-0.5">
+      <ul class="flex flex-wrap gap-4 justify-center">
         <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
           <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+            class="capitalize inline-block px-2 py-0.5 rounded font-semibold text-lg"
             :style="{
               color: gamesMap[gameThreshold.game].color.txt,
               backgroundColor: gamesMap[gameThreshold.game].color.bg,
@@ -60,7 +60,7 @@
     </UCard>
 
     <!-- GOOD -->
-<div class="flex items-stretch ...">
+<div class="flex items-stretch">
     <UCard class="my-5">
       <template #header>
         <p>
