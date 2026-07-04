@@ -27,9 +27,10 @@ components:
     links: リンク一覧
     updates: 更新履歴
   TheFooter:
-      tags:
-        wefmaika: ゑふまいか
-        nyanko: にゃんこ
+    tags:
+      balisman: Balisman
+      wefmaika: ゑふまいか
+      nyanko: にゃんこ
 composables:
   Games:
     th06:
@@ -186,10 +187,10 @@ pages:
         処理落ち率3%以上や不正ツールの使用が疑われる記録については掲載せず参考記録としても扱いません。{br}
         プレイヤー本人から要望があった一部の記録についても掲載しません。{br}
         東方錦上京は原則的にPIV（素点）未修正の記録を掲載対象とします。{br}
-        記録の修正・新規記録追加・リプレイ削除などを希望される方は管理人の{nyanko}に連絡してください。
+        記録の修正・新規記録追加・リプレイ削除などを希望される方は管理人の{balisman}に連絡してください。
       tags:
         silentselene: サイレントセレナ
-        nyanko: にゃんこ
+        balisman: Balisman
     using_tools:
       title: 外部ツール使用について
       content: |-
@@ -269,10 +270,10 @@ pages:
               answer: A. 有識者の意見があれば対応可能です
             publish_my_record:
               question: Q. 私の記録が追加されないのですが？
-              answer: A. {github}もしくは{nyanko}にご報告お願いします。気付き次第追加します。
+              answer: A. {github}もしくは{balisman}にご報告お願いします。気付き次第追加します。
               tags:
                 github: github
-                nyanko: にゃんこ
+                balisman: Balisman
             update_frequency:
               question: Q. 更新頻度はどのくらいですか？
               answer: A. 週に1回程度はチェックしますが、即日更新は確約できません
@@ -307,21 +308,23 @@ pages:
     operator:
       title: 運営者
       content: |-
-        {nyanko}
+        {balisman}
       tags:
-        nyanko: にゃんこ
+        balisman: Balisman
     operation_policy:
       title: 運営方針
       content: |-
-        このサイトは{nyanko1}が運営しているものです。{br}
-        {wefmaika}に作成を依頼し、氏名表示権を除く全ての権利/責任/義務を{nyanko2}に譲渡することによって成り立っています。{br}
-        よってこのサイトで何か不都合があれば{nyanko3}に問い合わせてください。{br}
-        このサイトのソースコードはMITライセンスにて{github}で公開されています。ただし弊サイトに著作権がないリプレイファイルやスコアデータに関してはMITライセンスを適用できません。
+        このサイトは{balisman}が運営しているものです。{br}
+        このサイトは{nyanko}が{wefmaika}に作成を依頼したものです。{br}
+        完成後、{wefmaika}は氏名表示権を除く全ての権利/責任/義務を{nyanko}へ譲渡しました。{br}
+        その後、{balisman}がサイトの運営責任を引き継ぎ、現在運営しています。{br}
+        よってこのサイトで何か不都合があれば{balisman}に問い合わせてください。{br}
+        このサイトのソースコードはMITライセンスにて{github}で公開されています。{br}
+        ただし弊サイトに著作権がないリプレイファイルやスコアデータに関してはMITライセンスを適用できません。
       tags:
         wefmaika: ゑふまいか
-        nyanko1: にゃんこ
-        nyanko2: にゃんこ
-        nyanko3: にゃんこ
+        nyanko: にゃんこ
+        balisman: Balisman
         github: github
     thresholds:
       th06:
@@ -374,7 +377,7 @@ pages:
         good: 20億
       th17:
         excellent: カワウソ 25億 / 非カワウソ 16億
-        great: カワウソ 20億 / 非カワウソ 13億 
+        great: カワウソ 20億 / 非カワウソ 13億
         good: カワウソ 15億 / 非カワウソ 10億
       th18:
         excellent: 咲夜 80億 / その他 40億

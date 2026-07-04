@@ -27,9 +27,10 @@ components:
     links: Links
     updates: Updates
   TheFooter:
-      tags:
-        wefmaika: WEF
-        nyanko: Nyanko
+    tags:
+      balisman: Balisman
+      wefmaika: WEF
+      nyanko: Nyanko
 composables:
   Games:
     th06:
@@ -182,17 +183,17 @@ pages:
         Game clear replays will be registered. {br}
         Replays with a slow rate greater than 3% or suspected use of cheat tools will not be registered. {br}
         Scores without replay evidence are added at the discretion of the administrator. {br}
-        If you would like to add or remove a replay, please contact the administrator, {nyanko} {br}
+        If you would like to add or remove a replay, please contact the administrator, {balisman} {br}
       tags:
         silentselene: Silentselene
-        nyanko: Nyanko
+        balisman: Balisman
     using_tools:
       title: Using External Tools
       content: |-
-          The permitted external tools are: {br}
-          vpatch, for the purpose of improving the performance of the game. Bug fixes such as the fix for the Marisa B laser bug in MoF are prohibited. {br}
-          thprac, for the purpose of practice and desync prevention. Using any of the cheat options in live play is prohibited, except in UM, in which the use of Market Manipulation is allowed. The full play must obtain the cards in the shop. {br}
-          For plays where PIV was modified using external tools in th20, if the threshold is exceeded when replaying without external tools, they will be subject to publishing.
+        The permitted external tools are: {br}
+        vpatch, for the purpose of improving the performance of the game. Bug fixes such as the fix for the Marisa B laser bug in MoF are prohibited. {br}
+        thprac, for the purpose of practice and desync prevention. Using any of the cheat options in live play is prohibited, except in UM, in which the use of Market Manipulation is allowed. The full play must obtain the cards in the shop. {br}
+        For plays where PIV was modified using external tools in th20, if the threshold is exceeded when replaying without external tools, they will be subject to publishing.
     compatible_games:
       title: Compatible Games
     threshold_scores:
@@ -261,10 +262,10 @@ pages:
               answer: A. 有識者の意見があれば対応可能です
             publish_my_record:
               question: Q. 私の記録が追加されないのですが？
-              answer: A. {github}もしくは{nyanko}にご報告お願いします。気付き次第追加します。
+              answer: A. {github}もしくは{balisman}にご報告お願いします。気付き次第追加します。
               tags:
                 github: GitHub
-                nyanko: Nyanko
+                balisman: Balisman
             update_frequency:
               question: Q. 更新頻度はどのくらいですか？
               answer: A. 週に1回は必ずチェックしますが、即日更新は確約できません
@@ -298,21 +299,21 @@ pages:
     operator:
       title: Operator
       content: |-
-        {nyanko}
+        {balisman}
       tags:
-        nyanko: Nyanko
+        balisman: Balisman
     operation_policy:
       title: Operation Policy
       content: |-
-        {wefmaika} created the site and has transferred all rights, responsibilities, and obligations, excluding the right to be identified by name, to {nyanko1}. {br}
-        So, if you encounter any issues with this site, please contact {nyanko2}. {br}
+        {wefmaika} created the site and has transferred all rights, responsibilities, and obligations, excluding the right to be identified by name, to {nyanko}. {br}
+        The site has since been taken over by {balisman}, who is now responsible for its operation. {br}
+        So, if you encounter any issues with this site, please contact {balisman}. {br}
         The source code for this site is available on {github} under the MIT license. {br}
         However, the MIT license does not apply to replay files and score data for which we do not hold copyright.
       tags:
         wefmaika: WEF
-        nyanko1: Nyanko
-        nyanko2: Nyanko
-        nyanko3: Nyanko
+        nyanko: Nyanko
+        balisman: Balisman
         github: GitHub
     thresholds:
       th06:
