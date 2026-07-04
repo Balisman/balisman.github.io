@@ -1,6 +1,6 @@
 # 裏スコボみたいなメモ書き EX
 
-![本番適用状況](https://github.com/thex-score/thex-score/actions/workflows/deploy.yml/badge.svg)
+![本番適用状況](https://github.com/Balisman/balisman.github.io/actions/workflows/deploy.yml/badge.svg)
 
 ## 目次
 
@@ -17,7 +17,7 @@
 
 ## 稼働ページ
 
-[here!](https://thex-score.net/)
+[here!](https://balisman.github.io/)
 
 ## セットアップ
 
@@ -25,7 +25,7 @@
 devcontainerを使用する都合上、開発環境である前提として現在のユーザをdockerグループに入れておくことを推奨する。
 ターミナルを開き、以下を入力する。
 ```bash
-$ git clone https://github.com/thex-score/thex-score.git
+$ git clone https://github.com/Balisman/balisman.github.io.git
 ```
 vscodeで開き、`Ctrl + Shift + P`でコマンドを開き `devcontainer` と打ち、 `開発コンテナー: コンテナーでリビルドして開く` で開く。
 devcontainerで再度vscodeが起動するのでその状態で `Ctrl + Shift + P` でコマンドを開き、 `create new terminal` で `新しいターミナルを開く` で新しいターミナルを開き、ターミナル上に以下を入力する。
@@ -39,7 +39,7 @@ $ corepack pnpm exec nuxt preview
 
 - 全てカレントディレクトリはリポジトリのトップとする
 ```bash
-$ cd thex-score
+$ cd balisman.github.io
 ```
 
 1. `git checkout main` した後, `git pull origin main` し、 `git branch {後述するブランチ名}` としてブランチを切ってから `git checkout {今さっきのブランチ名}` をしてブランチを移動する
@@ -108,7 +108,7 @@ $ cd thex-score
 
 - 全てカレントディレクトリはリポジトリのトップとする
 ```bash
-$ cd thex-score
+$ cd balisman.github.io
 ```
 
 1. `git checkout main` した後, `git pull origin main` し、 `git branch feature/add-game-{ゲームID}` としてブランチを切ってから `git checkout feature/{今さっきのブランチ名}` をしてブランチを移動する
