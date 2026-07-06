@@ -5,11 +5,11 @@
         <h1 class="text-xl font-bold">{{ $t("pages.index.welcome") }}</h1>
       </template>
 
-      <i18n-t keypath="pages.index.description" tag="p">
+      <SafeI18nT keypath="pages.index.description" tag="p">
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
 
       <template #footer>
         <p class="text-sm mb-1 font-medium">

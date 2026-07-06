@@ -12,7 +12,7 @@
       <template #header>
         <p>{{ $t("pages.about.publish_record.title") }}</p>
       </template>
-      <i18n-t keypath="pages.about.publish_record.content" tag="p">
+      <SafeI18nT keypath="pages.about.publish_record.content" tag="p">
         <template #silentselene>
           <NuxtLink href="https://www.silentselene.net/" target="_blank">
             {{ $t("pages.about.publish_record.tags.silentselene") }}
@@ -26,18 +26,18 @@
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
       <template #header>
         <p>{{ $t("pages.about.using_tools.title") }}</p>
       </template>
-      <i18n-t keypath="pages.about.using_tools.content" tag="p">
+      <SafeI18nT keypath="pages.about.using_tools.content" tag="p">
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -145,11 +145,11 @@
           {{ $t("pages.about.threshold_score_policy.title") }}
         </p>
       </template>
-      <i18n-t keypath="pages.about.threshold_score_policy.good.content" tag="p">
+      <SafeI18nT keypath="pages.about.threshold_score_policy.good.content" tag="p">
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
       <ul class="list-disc pl-5 space-y-0.5">
         <li>
           {{
@@ -307,7 +307,7 @@
             )
           }}
         </li>
-        <i18n-t
+        <SafeI18nT
           keypath="pages.about.score_FAQ.good.content.lists.publish_my_record.answer"
           tag="li"
         >
@@ -332,7 +332,7 @@
               }}
             </NuxtLink>
           </template>
-        </i18n-t>
+        </SafeI18nT>
         <li>
           {{
             $t(
@@ -375,14 +375,14 @@
         </p>
       </template>
 
-      <i18n-t
+      <SafeI18nT
         keypath="pages.about.threshold_score_policy.great.content"
         tag="p"
       >
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -424,14 +424,14 @@
         </p>
       </template>
 
-      <i18n-t
+      <SafeI18nT
         keypath="pages.about.threshold_score_policy.excellent.content"
         tag="p"
       >
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -493,11 +493,11 @@
       <template #header>
         <p>{{ $t("pages.about.additional_info.title") }}</p>
       </template>
-      <i18n-t keypath="pages.about.additional_info.content" tag="p">
+      <SafeI18nT keypath="pages.about.additional_info.content" tag="p">
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -505,7 +505,7 @@
         <p>{{ $t("pages.about.operator.title") }}</p>
       </template>
 
-      <i18n-t keypath="pages.about.operator.content" tag="p">
+      <SafeI18nT keypath="pages.about.operator.content" tag="p">
         <template #br>
           <br />
         </template>
@@ -514,14 +514,14 @@
             {{ $t("pages.about.operator.tags.balisman") }}
           </NuxtLink>
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
     <UCard class="my-5">
       <template #header>
         <p>{{ $t("pages.about.operation_policy.title") }}</p>
       </template>
 
-      <i18n-t keypath="pages.about.operation_policy.content" tag="p">
+      <SafeI18nT keypath="pages.about.operation_policy.content" tag="p">
         <template #br>
           <br />
         </template>
@@ -548,7 +548,7 @@
             {{ $t("pages.about.operation_policy.tags.github") }}
           </NuxtLink>
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
   </UContainer>
 </template>
