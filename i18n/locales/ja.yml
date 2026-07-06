@@ -1,8 +1,8 @@
 global:
   threshold_score_names:
-    good: bronze
-    great: silver
-    excellent: gold
+    good: 大台
+    great: 大々
+    excellent: 超大台
   table_headers:
     game: ゲーム名
     rank: 順位
@@ -231,33 +231,9 @@ pages:
       good:
         content:
           lists:
-            th07_100mil:
-              question: Q. 妖々夢10億では駄目なのですか？
-              answer: A. 駄目です。理由はNNFSしただけで容易に達成可能だから
-            th08_200mil:
-              question: Q. 永夜抄20億では駄目なのですか？
-              answer: A. 駄目です。理由はNMFSしただけで容易に達成可能だから
-            th10_950mil:
-              question: Q. 風神録9.5億は簡単過ぎませんか？
-              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
-            th11_100mil:
-              question: Q. 地霊殿10億は簡単過ぎませんか？
-              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
-            th16_200mil:
-              question: Q. 天空璋20億の難易度高くないですか？
-              answer: A. ある程度は達成に労力がかかるスコアに設定しています
-            th17_not_otter_150mil:
-              question: Q. 鬼形獣notカワウソ15億は厳しすぎませんか？
-              answer: A. 情報が乏しく基準設定が困難であるため全機体共通のスコアに設定しています。有識者の意見があれば下方修正される可能性があります
-            th18_300mil:
-              question: Q. 虹龍洞30億の難易度高くないですか？
-              answer: A. クリア難易度自体は他作と比較してかなり低いので大台スコアを高めに設定しています
             garbage_shot_type:
               question: Q. 残念機体に対する配慮はしないのですか？
               answer: A. 全機体現実的に達成可能な大台スコアに設定しています。ただしスコアを稼ぎやすい機体よりは達成難易度が高くなります
-            th20_compatible:
-              question: Q. 錦上京への対応はいつですか？
-              answer: A. PIVバグの関係で集計方法が定まらず見通しが立ちません
             th20_fixed_piv:
               question: Q. 錦上京のPIVバグ修正スコアは集計しないのですか？
               answer: A. 同一作品を異なる集計方法で2つ掲載するのはわかりづらいので別カテゴリーとして扱うことはしませんが、素点未修正でリプレイ再生した際に掲載条件を満たしていれば掲載します
@@ -294,9 +270,6 @@ pages:
             difficulty_gap:
               question: Q. 作品間の難易度格差が大きくないでしょうか？
               answer: A. 数字のキリの良さを重視するとどうしても難易度のばらつきが出てしまい、基準スコア(Gold)ではその影響がモロに出てしまいますが一定以上の難易度が保証されていれば問題ないと考えています。
-            th20_gold_achiever:
-              question: Q. 錦上京の達成者が0人なのですが基準スコアを下げないのですか？
-              answer: A. 現実的に可能なスコアと想定されるので基準スコアを下げる予定はありません。むしろリリース数ヶ月で簡単に達成できてしまうスコアでは大目標としては低すぎると思っています。
     additional_info:
       title: 補足
       content: |-
