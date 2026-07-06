@@ -90,9 +90,7 @@
       <template #header>
         <p>
           <UBadge class="capitalize" variant="subtle" color="secondary">
-            {{
-              $t("global.threshold_score_names.great")
-            }}
+            {{$t("global.threshold_score_names.great")}}
           </UBadge>
           {{ $t("pages.about.threshold_scores.title") }}
         </p>
@@ -155,25 +153,13 @@
       </i18n-t>
       <ul class="list-disc pl-5 space-y-0.5">
         <li>
-          {{
-            $t(
-              "pages.about.threshold_score_policy.good.condition_lists.not_nnfs"
-            )
-          }}
+          {{$t("pages.about.threshold_score_policy.good.condition_lists.not_nnfs")}}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.threshold_score_policy.good.condition_lists.for_beginners"
-            )
-          }}
+          {{$t("pages.about.threshold_score_policy.good.condition_lists.for_beginners")}}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.threshold_score_policy.good.condition_lists.for_experienced"
-            )
-          }}
+          {{$t("pages.about.threshold_score_policy.good.condition_lists.for_experienced")}}
         </li>
       </ul>
     </UCard>
@@ -189,122 +175,32 @@
       </template>
       <ul class="pl-5 space-y-0.5">
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th07_100mil.question")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question")}}
         </li>
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th07_100mil.answer")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.answer")}}
         </li>
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th08_200mil.question")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.garbage_shot_type.question")}}
         </li>
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th08_200mil.answer")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.garbage_shot_type.answer")}}
+        </li>
+        <li>
+          {{$t("pages.about.score_FAQ.good.content.lists.win98_support.question")}}
+        </li>
+        <li>
+          {{$t("pages.about.score_FAQ.good.content.lists.win98_support.answer")}}
         </li>
 
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th10_950mil.question")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.th09_support.question")}}
         </li>
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th10_950mil.answer")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.th09_support.answer")}}
         </li>
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th11_100mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th11_100mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th16_200mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th16_200mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th18_300mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th18_300mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.question"
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.answer"
-            )
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.win98_support.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.win98_support.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th09_support.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th09_support.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.good.content.lists.publish_my_record.question"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.publish_my_record.question")}}
         </li>
         <i18n-t
           keypath="pages.about.score_FAQ.good.content.lists.publish_my_record.answer"
@@ -315,11 +211,7 @@
               href="https://github.com/thex-score/thex-score/issues"
               target="_blank"
             >
-              {{
-                $t(
-                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github"
-                )
-              }}
+              {{$t("pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github")}}
             </NuxtLink>
           </template>
           <template #nyanko>
@@ -333,31 +225,16 @@
           </template>
         </i18n-t>
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.good.content.lists.update_frequency.question"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.update_frequency.question")}}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.good.content.lists.update_frequency.answer"
-            )
-          }}
-        </li>
-
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.good.content.lists.recommendation.question"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.update_frequency.answer")}}
         </li>
         <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.recommendation.answer")
-          }}
+          {{$t("pages.about.score_FAQ.good.content.lists.recommendation.question")}}
+        </li>
+        <li>
+          {{$t("pages.about.score_FAQ.good.content.lists.recommendation.answer")}}
         </li>
       </ul>
     </UCard>
@@ -402,11 +279,7 @@
           }}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.great.content.lists.score_decrease.answer"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.great.content.lists.score_decrease.answer")}}
         </li>
       </ul>
     </UCard>
@@ -444,46 +317,16 @@
       </template>
       <ul class="pl-5 space-y-0.5">
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.score_decrease.question"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.excellent.content.lists.score_decrease.question")}}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.score_decrease.answer"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.excellent.content.lists.score_decrease.answer")}}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.question"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.excellent.content.lists.difficulty_gap.question")}}
         </li>
         <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.answer"
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.th20_gold_achiever.question"
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.th20_gold_achiever.answer"
-            )
-          }}
+          {{$t("pages.about.score_FAQ.excellent.content.lists.difficulty_gap.answer")}}
         </li>
       </ul>
     </UCard>
