@@ -22,7 +22,7 @@
 ## セットアップ
 
 最初に[docker](https://docs.docker.com/engine/install/)を入れておく。
-devcontainerを使用する都合上、開発環境である前提として現在のユーザをdockerグループに入れておくことを推奨する。
+devcontainer[^devcontainer]を使用する都合上、開発環境である前提として現在のユーザをdockerグループに入れておくことを推奨する。
 ターミナルを開き、以下を入力する。
 ```bash
 $ git clone https://github.com/Balisman/balisman.github.io.git
@@ -34,6 +34,8 @@ $ corepack pnpm exec nuxt generate
 $ corepack pnpm exec nuxt preview
 ```
 以降 http://localhost:3000 でお試しウェブサーバが動く。停止したければターミナル上で `Ctrl + C` とかで停止させること。
+
+[^devcontainer]: .devcontainer/docker-compose.ymlをカスタマイズしたい場合は.devcontainer/local/docker-compose.ymlにカスタマイズ内容を記載することで変更できる。.devcontainer/local/docker-compose.example.ymlを参考にすること。
 
 ## 新規記録追加
 

@@ -44,10 +44,10 @@
       <template #header>
         <p>{{ $t("pages.about.compatible_games.title") }}</p>
       </template>
-      <ul class="pl-5 space-y-0.5">
+      <ul class="flex flex-wrap gap-4 justify-center">
         <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
           <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+            class="capitalize inline-block px-2 py-0.5 rounded font-semibold text-lg"
             :style="{
               color: gamesMap[gameThreshold.game].color.txt,
               backgroundColor: gamesMap[gameThreshold.game].color.bg,
@@ -60,7 +60,7 @@
     </UCard>
 
     <!-- GOOD -->
-    <div class="flex items-stretch ...">
+    <div class="flex items-stretch">
       <UCard class="my-5">
         <template #header>
           <p>
@@ -145,7 +145,10 @@
           {{ $t("pages.about.threshold_score_policy.title") }}
         </p>
       </template>
-      <SafeI18nT keypath="pages.about.threshold_score_policy.good.content" tag="p">
+      <SafeI18nT
+        keypath="pages.about.threshold_score_policy.good.content"
+        tag="p"
+      >
         <template #br>
           <br />
         </template>
@@ -187,69 +190,6 @@
       <ul class="pl-5 space-y-0.5">
         <li>
           {{
-            $t("pages.about.score_FAQ.good.content.lists.th07_100mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th07_100mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th08_200mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th08_200mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th10_950mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th10_950mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th11_100mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th11_100mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th16_200mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th16_200mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th18_300mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th18_300mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
             $t(
               "pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question",
             )
@@ -260,7 +200,6 @@
             $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.answer")
           }}
         </li>
-
         <li>
           {{
             $t(
@@ -275,7 +214,6 @@
             )
           }}
         </li>
-
         <li>
           {{
             $t(
@@ -299,7 +237,6 @@
             $t("pages.about.score_FAQ.good.content.lists.th09_support.answer")
           }}
         </li>
-
         <li>
           {{
             $t(
@@ -347,7 +284,6 @@
             )
           }}
         </li>
-
         <li>
           {{
             $t(
@@ -469,20 +405,6 @@
           {{
             $t(
               "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.answer",
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.th20_gold_achiever.question",
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.th20_gold_achiever.answer",
             )
           }}
         </li>
