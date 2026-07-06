@@ -1,10 +1,11 @@
 {
-    "name": "thex-score",
+    "name": "balisman.github.io",
     "dockerComposeFile": [
-        "docker-compose.yml"
+        "docker-compose.yml",
+        "local/docker-compose.yml"
     ],
     "service": "devcontainer",
-    "workspaceFolder": "/workspace/thex-score",
+    "workspaceFolder": "/workspace/balisman.github.io",
     "forwardPorts": [
         3000
     ],
@@ -14,6 +15,7 @@
             "onAutoForward": "notify"
         }
     },
+    "initializeCommand": "test -f .devcontainer/local/docker-compose.yml || cp .devcontainer/local/docker-compose.empty.yml .devcontainer/local/docker-compose.yml",
     "postCreateCommand": ".devcontainer/post-create.sh",
     "customizations": {
         "vscode": {
