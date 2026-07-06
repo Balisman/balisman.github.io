@@ -9,6 +9,8 @@ import {
 } from "vue";
 import { useI18n } from "vue-i18n";
 
+// 同じプレースホルダが複数指定されていても表示されるように
+// プレースホルダ名を差し替えてから翻訳を行うもの
 export default defineComponent({
   name: "SafeI18nT",
   inheritAttrs: false,
