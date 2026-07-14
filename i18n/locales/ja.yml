@@ -1,8 +1,8 @@
 global:
   threshold_score_names:
-    good: bronze
-    great: silver
-    excellent: gold
+    good: 大台
+    great: 大々
+    excellent: 超大台
   table_headers:
     game: ゲーム名
     rank: 順位

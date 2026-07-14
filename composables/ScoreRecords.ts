@@ -210,10 +210,10 @@ export function useScoreRecords() {
       },
       th14: {
         MarisaB: {
-          score: 1017114960,
-          status: "good",
-          date: "2026-03-27T15:30:00",
-          replay: "th14_ud0082.rpy",
+          score: 1124281780,
+          status: "great",
+          date: "2026-07-13T15:30:00",
+          replay: "th14_ud0096.rpy",
           detail: "-",
         },
       },
@@ -1128,6 +1128,17 @@ export function useScoreRecords() {
         },
       },
     },
+    bun: {
+      th18: {
+        Sanae: {
+          score: 3611148130,
+          status: "great",
+          date: "2026-07-11T15:30:00",
+          replay: "th18_ud0152.rpy",
+          detail: "-",
+        },
+      },
+    },
     burata: {
       th12: {
         SanaeB: {
@@ -1743,10 +1754,10 @@ export function useScoreRecords() {
     "Echo Alert": {
       th12: {
         SanaeB: {
-          score: 699025580,
-          status: "great",
-          date: "2026-06-25T15:30:00",
-          replay: "th12_ud0144.rpy",
+          score: 701544340,
+          status: "excellent",
+          date: "2026-07-07T15:30:00",
+          replay: "th12_ud0145.rpy",
           detail: "-",
         },
       },
@@ -4346,9 +4357,9 @@ export function useScoreRecords() {
     norn: {
       th20: {
         ReimuG1: {
-          score: 645069070,
-          status: "good",
-          date: "2025-09-18T15:30:00",
+          score: 832473500,
+          status: "excellent",
+          date: "2026-07-09T15:30:00",
           replay: "th20_ud0003.rpy",
           detail: "-",
         },
@@ -4673,7 +4684,16 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
-      th11: {
+      th10: {
+        MarisaC: {
+          score: 1000346870,
+          status: "excellent",
+          date: "2026-07-09T15:30:00",
+          replay: "th10_ud0152.rpy",
+          detail: "-",
+        },
+      },
+	  th11: {
         ReimuA: {
           score: 1100507180,
           status: "excellent",
@@ -8844,7 +8864,7 @@ export function useScoreRecords() {
         },
       },
     },
-    れもな: {
+    れもな: { //lemona
       th06: {
         ReimuA: {
           score: 593348130,
@@ -8881,6 +8901,15 @@ export function useScoreRecords() {
           status: "good",
           date: "2021-03-06T15:30:00",
           replay: "th10_ud0108.rpy",
+          detail: "-",
+        },
+      },
+      th14: {
+        MarisaB: {
+          score: 1012749860,
+          status: "good",
+          date: "2026-07-06T15:30:00",
+          replay: "th14_ud0095.rpy",
           detail: "-",
         },
       },
