@@ -211,7 +211,8 @@ pages:
           for_experienced: It cannot be easily achieved by strong players that simply watch someone's replay and imitate the strategies
       great:
         content: |-
-          The "Bigger" threshold is meant for players that have just achieved big, and are looking for a moderate threshold before attempting to achieve "Super Big". {br}
+          The "Super Big" threshold is extremely difficult to achieve and is intended for players who have thoroughly mastered the game. {br}
+          If you can achieve this threshold score, you are able to proudly call yourself a super player. {br}
           Note that these thresholds are set for the best scoring shottypes, so it may be impossible to achieve this threshold with the weaker shottypes.
       excellent:
         content: |-
@@ -223,27 +224,51 @@ pages:
       good:
         content:
           lists:
+            th07_100mil:
+              question: Q. 妖々夢10億では駄目なのですか？
+              answer: A. 駄目です。理由はNNFSしただけで容易に達成可能だから
+            th08_200mil:
+              question: Q. 永夜抄20億では駄目なのですか？
+              answer: A. 駄目です。理由はNMFSしただけで容易に達成可能だから
+            th10_950mil:
+              question: Q. 風神録9.5億は簡単過ぎませんか？
+              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
+            th11_100mil:
+              question: Q. 地霊殿10億は簡単過ぎませんか？
+              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
+            th16_200mil:
+              question: Q. 天空璋20億の難易度高くないですか？
+              answer: A. ある程度は達成に労力がかかるスコアに設定しています
+            th17_not_otter_150mil:
+              question: Q. 鬼形獣notカワウソ15億は厳しすぎませんか？
+              answer: A. 情報が乏しく基準設定が困難であるため全機体共通のスコアに設定しています。有識者の意見があれば下方修正される可能性があります
+            th18_300mil:
+              question: Q. 虹龍洞30億の難易度高くないですか？
+              answer: A. クリア難易度自体は他作と比較してかなり低いので大台スコアを高めに設定しています
             garbage_shot_type:
-              question: Q. Are shottypes with weaker scoring potential considered?
-              answer: A. We try to seperate thresholds where scoring differences are very large. The thresholds are set based on the best performing shottypes in the group, so it may be more difficult to achieve the threshold with the weak ones.
+              question: Q. 残念機体に対する配慮はしないのですか？
+              answer: A. 全機体現実的に達成可能な大台スコアに設定しています。ただしスコアを稼ぎやすい機体よりは達成難易度が高くなります
+            th20_compatible:
+              question: Q. 錦上京への対応はいつですか？
+              answer: A. PIVバグの関係で集計方法が定まらず見通しが立ちません
             th20_fixed_piv:
               question: Q. Can PIV be fixed for FW?
               answer: A. It has been decided that the threshold will be the score obtained with unfixed PIV. Runs with a fixed PIV score may not be considered, but can still be added if it surpasses the score threshold with unfixed PIV playback.
             win98_support:
-              question: Q. Will there be support for the PC-98 games?
-              answer: A. There are no plans to support PC-98 games at this moment.
+              question: Q. 旧作への対応はしないのですか？
+              answer: A. 旧作に対応する予定はありません
             th09_support:
               question: Q. Will there be support for PoFV?
               answer: A. It could be supported in the future if some thresholds are provided by some expert level players.
             publish_my_record:
-              question: Q. I noticed that my score has not been published. When will my score be published?
-              answer: A. It is sometimes possible to miss scores. You can file an issue on {github} or message Balisman on Discord.
+              question: Q. 私の記録が追加されないのですが？
+              answer: A. {github}もしくは{nyanko}にご報告お願いします。気付き次第追加します。
               tags:
                 github: GitHub
                 balisman: Balisman
             update_frequency:
-              question: Q. When will new records be added to the site?
-              answer: A. Varies, 2 weeks at most.
+              question: Q. 更新頻度はどのくらいですか？
+              answer: A. 週に1回は必ずチェックしますが、即日更新は確約できません
             recommendation:
               question: Q. ズバリどの作品がおすすめですか？
               answer: A. 達成難易度が良心的と思われるのは達成者が多い作品ですが、自分がプレイしたい作品の方がモチベを保ちやすいです
@@ -262,6 +287,9 @@ pages:
             difficulty_gap:
               question: Q. 作品間の難易度格差が大きくないでしょうか？
               answer: A. 数字のキリの良さを重視するとどうしても難易度のばらつきが出てしまい、基準スコア(Lunatic)ではその影響がモロに出てしまいますが一定以上の難易度が保証されていれば問題ないと考えています。
+            th20_gold_achiever:
+              question: Q. 錦上京の達成者が0人なのですが基準スコアを下げないのですか？
+              answer: A. 現実的に可能なスコアと想定されるので基準スコアを下げる予定はありません。むしろリリース数ヶ月で簡単に達成できてしまうスコアでは大目標としては低すぎると思っています。
     additional_info:
       title: Additional Information
       content: |-

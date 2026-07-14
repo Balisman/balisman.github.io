@@ -200,6 +200,7 @@
             $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.answer")
           }}
         </li>
+
         <li>
           {{
             $t(
@@ -237,6 +238,7 @@
             $t("pages.about.score_FAQ.good.content.lists.th09_support.answer")
           }}
         </li>
+
         <li>
           {{
             $t(
@@ -284,6 +286,7 @@
             )
           }}
         </li>
+
         <li>
           {{
             $t(
