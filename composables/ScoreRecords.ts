@@ -5984,6 +5984,7 @@ export function useScoreRecords() {
           replay: "th6_ud0109.rpy",
           detail: "-",
         },
+      },
       th10: {
         ReimuA: {
           score: 974479160,
