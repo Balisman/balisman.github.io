@@ -1,6 +1,14 @@
 export function useNewScoreRecords() {
   const newScoreRecords = [
 	{
+      player: "Borealis",
+      player: "Balisman",
+      player: "幽谷もこ",
+      player: "いな",
+      player: "Oscar",
+      player: "TSG",
+      player: "ゆーみや",
+      player: "Lorenzo",
       player: "norn",
       game: "th20",
       shot_type: "ReimuG1",
