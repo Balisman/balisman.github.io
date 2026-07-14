@@ -4,16 +4,31 @@
   >
     <UContainer class="pt-4 pb-2 flex flex-col gap-2">
       <p class="text-sm text-center whitespace-nowrap">
-        © 2025
-        <NuxtLink href="https://x.com/flower874_" target="_blank" class="hover:underline hover:underline-offset-2 hover:text-primary transition-colors">
-          {{ $t(`components.TheFooter.tags.nyanko`) }}
+        Operated&nbsp;by
+        <NuxtLink
+          href="https://github.com/Balisman"
+          target="_blank"
+          class="hover:underline hover:underline-offset-2 hover:text-primary transition-colors"
+        >
+          {{ $t(`components.TheFooter.tags.balisman`) }}
         </NuxtLink>
-        — All&nbsp;Rights&nbsp;Reserved.
       </p>
 
       <p class="text-xs self-end text-right whitespace-nowrap">
-        Created&nbsp;by&nbsp;
-        <NuxtLink href="https://wefma.net" target="_blank" class="hover:underline hover:underline-offset-2 hover:text-primary transition-colors">
+        © 2025
+        <NuxtLink
+          href="https://x.com/flower874_"
+          target="_blank"
+          class="hover:underline hover:underline-offset-2 hover:text-primary transition-colors"
+        >
+          {{ $t(`components.TheFooter.tags.nyanko`) }}
+        </NuxtLink>
+        /&nbsp;Created&nbsp;by
+        <NuxtLink
+          href="https://wefma.net"
+          target="_blank"
+          class="hover:underline hover:underline-offset-2 hover:text-primary transition-colors"
+        >
           {{ $t(`components.TheFooter.tags.wefmaika`) }}
         </NuxtLink>
       </p>

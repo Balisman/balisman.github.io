@@ -75,7 +75,10 @@
 <script setup lang="ts">
 const links = ref({
   uploaders: [
-    { label: "Silent Selene（現東方スコアボード）", url: "https://www.silentselene.net/" },
+    {
+      label: "Silent Selene（現東方スコアボード）",
+      url: "https://www.silentselene.net/",
+    },
     { label: "えるろだ", url: "https://l-uploader.puresign.tokyo/" },
     { label: "LunarCast", url: "https://replay.lunarcast.net/" },
   ],
@@ -85,7 +88,8 @@ const links = ref({
       url: "http://www.coldlemonade.net/",
     },
     {
-      label: "東方風神録Extraスコアアタック概論（管理人にゃんこの風EX攻略記事）",
+      label:
+        "東方風神録Extraスコアアタック概論（元管理人にゃんこ氏の風EX攻略記事）",
       url: "https://note.com/flower874_/n/n6cde241eab41",
     },
     {
@@ -93,7 +97,8 @@ const links = ref({
       url: "https://apo-adipic.hatenablog.com/entry/2023/02/08/152158",
     },
     {
-      label: "東方虹龍洞Extraスコアアタック概論（管理人にゃんこの虹EX攻略記事）",
+      label:
+        "東方虹龍洞Extraスコアアタック概論（元管理人にゃんこ氏の虹EX攻略記事）",
       url: "https://note.com/flower874_/n/nd49da8a540f9",
     },
   ],

@@ -12,32 +12,32 @@
       <template #header>
         <p>{{ $t("pages.about.publish_record.title") }}</p>
       </template>
-      <i18n-t keypath="pages.about.publish_record.content" tag="p">
+      <SafeI18nT keypath="pages.about.publish_record.content" tag="p">
         <template #silentselene>
           <NuxtLink href="https://www.silentselene.net/" target="_blank">
             {{ $t("pages.about.publish_record.tags.silentselene") }}
           </NuxtLink>
         </template>
-        <template #nyanko>
-          <NuxtLink href="https://x.com/flower874_" target="_blank">
-            {{ $t("pages.about.publish_record.tags.nyanko") }}
+        <template #balisman>
+          <NuxtLink href="https://github.com/Balisman" target="_blank">
+            {{ $t("pages.about.publish_record.tags.balisman") }}
           </NuxtLink>
         </template>
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
       <template #header>
         <p>{{ $t("pages.about.using_tools.title") }}</p>
       </template>
-      <i18n-t keypath="pages.about.using_tools.content" tag="p">
+      <SafeI18nT keypath="pages.about.using_tools.content" tag="p">
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -60,85 +60,82 @@
     </UCard>
 
     <!-- GOOD -->
-<div class="flex items-stretch">
-    <UCard class="my-5">
-      <template #header>
-        <p>
-          <UBadge class="capitalize" variant="subtle" color="info">
-            {{ $t("global.threshold_score_names.good") }}
-          </UBadge>
-          {{ $t("pages.about.threshold_scores.title") }}
-        </p>
-      </template>
-      <ul class="pl-3 space-y-0.5">
-        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-          <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
-            :style="{
-              color: gamesMap[gameThreshold.game].color.txt,
-              backgroundColor: gamesMap[gameThreshold.game].color.bg,
-            }"
-          >
-            {{ $t(gamesMap[gameThreshold.game].name) }}
-          </UBadge>
-          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.good`) }}
-        </li>
-      </ul>
-    </UCard>
-	
-	    <UCard class="my-5">
-      <template #header>
-        <p>
-          <UBadge class="capitalize" variant="subtle" color="secondary">
-            {{
-              $t("global.threshold_score_names.great")
-            }}
-          </UBadge>
-          {{ $t("pages.about.threshold_scores.title") }}
-        </p>
-      </template>
-      <ul class="pl-3 space-y-0.5">
-        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-          <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
-            :style="{
-              color: gamesMap[gameThreshold.game].color.txt,
-              backgroundColor: gamesMap[gameThreshold.game].color.bg,
-            }"
-          >
-            {{ $t(gamesMap[gameThreshold.game].name) }}
-          </UBadge>
-          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.great`) }}
-        </li>
-      </ul>
-    </UCard>
-	
-	    <UCard class="my-5">
-      <template #header>
-        <p>
-          <UBadge variant="subtle" color="success">
-            {{ $t("global.threshold_score_names.excellent") }}
-          </UBadge>
-          {{ $t("pages.about.threshold_scores.title") }}
-        </p>
-      </template>
-      <ul class="pl-3 space-y-0.5">
-        <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-          <UBadge
-            class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
-            :style="{
-              color: gamesMap[gameThreshold.game].color.txt,
-              backgroundColor: gamesMap[gameThreshold.game].color.bg,
-            }"
-          >
-            {{ $t(gamesMap[gameThreshold.game].name) }}
-          </UBadge>
-          ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.excellent`) }}
-        </li>
-      </ul>
-    </UCard>
-	
-</div>
+    <div class="flex items-stretch">
+      <UCard class="my-5">
+        <template #header>
+          <p>
+            <UBadge class="capitalize" variant="subtle" color="info">
+              {{ $t("global.threshold_score_names.good") }}
+            </UBadge>
+            {{ $t("pages.about.threshold_scores.title") }}
+          </p>
+        </template>
+        <ul class="pl-3 space-y-0.5">
+          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
+            <UBadge
+              class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+              :style="{
+                color: gamesMap[gameThreshold.game].color.txt,
+                backgroundColor: gamesMap[gameThreshold.game].color.bg,
+              }"
+            >
+              {{ $t(gamesMap[gameThreshold.game].name) }}
+            </UBadge>
+            ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.good`) }}
+          </li>
+        </ul>
+      </UCard>
+
+      <UCard class="my-5">
+        <template #header>
+          <p>
+            <UBadge class="capitalize" variant="subtle" color="secondary">
+              {{ $t("global.threshold_score_names.great") }}
+            </UBadge>
+            {{ $t("pages.about.threshold_scores.title") }}
+          </p>
+        </template>
+        <ul class="pl-3 space-y-0.5">
+          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
+            <UBadge
+              class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+              :style="{
+                color: gamesMap[gameThreshold.game].color.txt,
+                backgroundColor: gamesMap[gameThreshold.game].color.bg,
+              }"
+            >
+              {{ $t(gamesMap[gameThreshold.game].name) }}
+            </UBadge>
+            ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.great`) }}
+          </li>
+        </ul>
+      </UCard>
+
+      <UCard class="my-5">
+        <template #header>
+          <p>
+            <UBadge variant="subtle" color="success">
+              {{ $t("global.threshold_score_names.excellent") }}
+            </UBadge>
+            {{ $t("pages.about.threshold_scores.title") }}
+          </p>
+        </template>
+        <ul class="pl-3 space-y-0.5">
+          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
+            <UBadge
+              class="capitalize inline-block px-2 py-0.5 rounded font-semibold"
+              :style="{
+                color: gamesMap[gameThreshold.game].color.txt,
+                backgroundColor: gamesMap[gameThreshold.game].color.bg,
+              }"
+            >
+              {{ $t(gamesMap[gameThreshold.game].name) }}
+            </UBadge>
+            ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.excellent`) }}
+          </li>
+        </ul>
+      </UCard>
+    </div>
     <UCard class="my-5">
       <template #header>
         <p>
@@ -148,30 +145,33 @@
           {{ $t("pages.about.threshold_score_policy.title") }}
         </p>
       </template>
-      <i18n-t keypath="pages.about.threshold_score_policy.good.content" tag="p">
+      <SafeI18nT
+        keypath="pages.about.threshold_score_policy.good.content"
+        tag="p"
+      >
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
       <ul class="list-disc pl-5 space-y-0.5">
         <li>
           {{
             $t(
-              "pages.about.threshold_score_policy.good.condition_lists.not_nnfs"
+              "pages.about.threshold_score_policy.good.condition_lists.not_nnfs",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.threshold_score_policy.good.condition_lists.for_beginners"
+              "pages.about.threshold_score_policy.good.condition_lists.for_beginners",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.threshold_score_policy.good.condition_lists.for_experienced"
+              "pages.about.threshold_score_policy.good.condition_lists.for_experienced",
             )
           }}
         </li>
@@ -190,70 +190,9 @@
       <ul class="pl-5 space-y-0.5">
         <li>
           {{
-            $t("pages.about.score_FAQ.good.content.lists.th07_100mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th07_100mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th08_200mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th08_200mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th10_950mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th10_950mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th11_100mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th11_100mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th16_200mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th16_200mil.answer")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th18_300mil.question")
-          }}
-        </li>
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th18_300mil.answer")
-          }}
-        </li>
-
-        <li>
-          {{
-            $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question")
+            $t(
+              "pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question",
+            )
           }}
         </li>
         <li>
@@ -265,21 +204,22 @@
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.question"
+              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.question",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.answer"
+              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.answer",
             )
           }}
         </li>
-
         <li>
           {{
-            $t("pages.about.score_FAQ.good.content.lists.win98_support.question")
+            $t(
+              "pages.about.score_FAQ.good.content.lists.win98_support.question",
+            )
           }}
         </li>
         <li>
@@ -302,47 +242,47 @@
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.good.content.lists.publish_my_record.question"
+              "pages.about.score_FAQ.good.content.lists.publish_my_record.question",
             )
           }}
         </li>
-        <i18n-t
+        <SafeI18nT
           keypath="pages.about.score_FAQ.good.content.lists.publish_my_record.answer"
           tag="li"
         >
           <template #github>
             <NuxtLink
-              href="https://github.com/thex-score/thex-score/issues"
+              href="https://github.com/Balisman/balisman.github.io/issues"
               target="_blank"
             >
               {{
                 $t(
-                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github"
+                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github",
                 )
               }}
             </NuxtLink>
           </template>
-          <template #nyanko>
-            <NuxtLink href="https://x.com/flower874_" target="_blank">
+          <template #balisman>
+            <NuxtLink href="https://github.com/Balisman" target="_blank">
               {{
                 $t(
-                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.nyanko"
+                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.balisman",
                 )
               }}
             </NuxtLink>
           </template>
-        </i18n-t>
+        </SafeI18nT>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.good.content.lists.update_frequency.question"
+              "pages.about.score_FAQ.good.content.lists.update_frequency.question",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.good.content.lists.update_frequency.answer"
+              "pages.about.score_FAQ.good.content.lists.update_frequency.answer",
             )
           }}
         </li>
@@ -350,7 +290,7 @@
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.good.content.lists.recommendation.question"
+              "pages.about.score_FAQ.good.content.lists.recommendation.question",
             )
           }}
         </li>
@@ -374,14 +314,14 @@
         </p>
       </template>
 
-      <i18n-t
+      <SafeI18nT
         keypath="pages.about.threshold_score_policy.great.content"
         tag="p"
       >
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -397,14 +337,14 @@
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.great.content.lists.score_decrease.question"
+              "pages.about.score_FAQ.great.content.lists.score_decrease.question",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.great.content.lists.score_decrease.answer"
+              "pages.about.score_FAQ.great.content.lists.score_decrease.answer",
             )
           }}
         </li>
@@ -423,14 +363,14 @@
         </p>
       </template>
 
-      <i18n-t
+      <SafeI18nT
         keypath="pages.about.threshold_score_policy.excellent.content"
         tag="p"
       >
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -446,42 +386,28 @@
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.excellent.content.lists.score_decrease.question"
+              "pages.about.score_FAQ.excellent.content.lists.score_decrease.question",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.excellent.content.lists.score_decrease.answer"
+              "pages.about.score_FAQ.excellent.content.lists.score_decrease.answer",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.question"
+              "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.question",
             )
           }}
         </li>
         <li>
           {{
             $t(
-              "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.answer"
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.th20_gold_achiever.question"
-            )
-          }}
-        </li>
-        <li>
-          {{
-            $t(
-              "pages.about.score_FAQ.excellent.content.lists.th20_gold_achiever.answer"
+              "pages.about.score_FAQ.excellent.content.lists.difficulty_gap.answer",
             )
           }}
         </li>
@@ -492,11 +418,11 @@
       <template #header>
         <p>{{ $t("pages.about.additional_info.title") }}</p>
       </template>
-      <i18n-t keypath="pages.about.additional_info.content" tag="p">
+      <SafeI18nT keypath="pages.about.additional_info.content" tag="p">
         <template #br>
           <br />
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
 
     <UCard class="my-5">
@@ -504,23 +430,23 @@
         <p>{{ $t("pages.about.operator.title") }}</p>
       </template>
 
-      <i18n-t keypath="pages.about.operator.content" tag="p">
+      <SafeI18nT keypath="pages.about.operator.content" tag="p">
         <template #br>
           <br />
         </template>
-        <template #nyanko>
-          <NuxtLink href="https://x.com/flower874_" target="_blank">
-            {{ $t("pages.about.operator.tags.nyanko") }}
+        <template #balisman>
+          <NuxtLink href="https://github.com/Balisman" target="_blank">
+            {{ $t("pages.about.operator.tags.balisman") }}
           </NuxtLink>
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
     <UCard class="my-5">
       <template #header>
         <p>{{ $t("pages.about.operation_policy.title") }}</p>
       </template>
 
-      <i18n-t keypath="pages.about.operation_policy.content" tag="p">
+      <SafeI18nT keypath="pages.about.operation_policy.content" tag="p">
         <template #br>
           <br />
         </template>
@@ -534,30 +460,20 @@
             {{ $t("pages.about.operation_policy.tags.nyanko") }}
           </NuxtLink>
         </template>
-        <template #nyanko1>
-          <NuxtLink href="https://x.com/flower874_" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.nyanko1") }}
-          </NuxtLink>
-        </template>
-        <template #nyanko2>
-          <NuxtLink href="https://x.com/flower874_" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.nyanko2") }}
-          </NuxtLink>
-        </template>
-        <template #nyanko3>
-          <NuxtLink href="https://x.com/flower874_" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.nyanko3") }}
+        <template #balisman>
+          <NuxtLink href="https://github.com/Balisman" target="_blank">
+            {{ $t("pages.about.operation_policy.tags.balisman") }}
           </NuxtLink>
         </template>
         <template #github>
           <NuxtLink
-            href="https://github.com/thex-score/thex-score"
+            href="https://github.com/Balisman/balisman.github.io"
             target="_blank"
           >
             {{ $t("pages.about.operation_policy.tags.github") }}
           </NuxtLink>
         </template>
-      </i18n-t>
+      </SafeI18nT>
     </UCard>
   </UContainer>
 </template>

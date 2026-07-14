@@ -5,27 +5,20 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   modules: ["@nuxt/ui", "@nuxtjs/seo", "@nuxt/image-edge", "@nuxtjs/i18n"],
-  css: [
-    "~/assets/css/variables.css",
-    "~/assets/css/main.css",
-  ],
+  css: ["~/assets/css/variables.css", "~/assets/css/main.css"],
   icon: {
     provider: "iconify",
     serverBundle: false,
     clientBundle: { scan: true },
   },
   site: {
-    url: "https://thex-score.net",
+    url: "https://balisman.github.io",
     name: "東方EXスコボ",
     defaultLocale: "ja",
     trailingSlash: false,
     indexable: true,
   },
   robots: {
-    // ドメイン無しのgithub pagesではリポジトリのpath直下にページ置かれる
-    // しかしクローラはpath無しの直下のrobots.txtしか読まない
-    // よってpathを含むrobots.txtは存在する意味がないため生成を禁止する必要がある
-    // 現状はドメインを取得したのでrobots.txtは生成してよい
     robotsTxt: true,
     metaTag: true,
   },
@@ -39,7 +32,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "ja",
-    baseUrl: "https://thex-score.net",
+    baseUrl: "https://balisman.github.io",
     locales: [
       {
         code: "ja",
@@ -68,7 +61,6 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    // 独自ドメインを取得していない場合はgithub_pagesだったら/thex-score/というプレフィックスを付けなければならない
     baseURL: process.env.NUXT_PUBLIC_DEPLOY_ENV === "github_pages" ? "/" : "/",
   },
   vite: {
