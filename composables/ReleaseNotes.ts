@@ -40,6 +40,7 @@ export function UseReleases(): Release[] {
 		{ type: "tpl", id: "add_record", game: "th18", shot: "Marisa", player:"Oscar" },
 		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"工藤氏。" },
 		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG1", player:"はちじ" },
+      ],
     },
     {
       version: "1.2.41",
