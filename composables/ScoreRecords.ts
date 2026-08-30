@@ -1145,10 +1145,10 @@ export function useScoreRecords() {
     bun: {
       th18: {
         Sanae: {
-          score: 3701671970,
+          score: 3768385880,
           status: "great",
-          date: "2026-08-01T15:30:00",
-          replay: "th18_ud0056.rpy",
+          date: "2026-08-20T15:30:00",
+          replay: "th18_ud0063.rpy",
           detail: "-",
         },
       },
@@ -4456,6 +4456,20 @@ export function useScoreRecords() {
           replay: "th12_ud0125.rpy",
           detail: "-",
         },
+        MarisaB: {
+          score: 570919010,
+          status: "good",
+          date: "2026-03-26T15:30:00",
+          replay: "th12_ud0146.rpy",
+          detail: "-",
+        },
+        SanaeA: {
+          score: 504550490,
+          status: "good",
+          date: "2025-11-09T15:30:00",
+          replay: "th12_ud0147.rpy",
+          detail: "-",
+        },
         SanaeB: {
           score: 622852010,
           status: "great",
@@ -4466,10 +4480,10 @@ export function useScoreRecords() {
       },
       th128: {
         Cirno: {
-          score: 94994460,
-          status: "good",
-          date: "2026-08-18T15:30:00",
-          replay: "th128_ud0027.rpy",
+          score: 95339670,
+          status: "great",
+          date: "2026-08-21T15:30:00",
+          replay: "th128_ud0028.rpy",
           detail: "-",
         },
       },
@@ -4782,6 +4796,13 @@ export function useScoreRecords() {
         },
       },
       th14: {
+        MarisaA: {
+          score: 776273760,
+          status: "good",
+          date: "2026-08-21T15:30:00",
+          replay: "th14_ud0106.rpy",
+          detail: "-",
+        },
         MarisaB: {
           score: 1237516020,
           status: "excellent",
@@ -8302,10 +8323,10 @@ export function useScoreRecords() {
           detail: "-",
         },
 		MarisaG1: {
-          score: 723776920,
+          score: 740675340,
           status: "great",
-          date: "2026-08-13T15:30:00",
-          replay: "th20_ud0073.rpy",
+          date: "2026-08-20T15:30:00",
+          replay: "th20_ud0095.rpy",
           detail: "-",
         },
       },
@@ -10757,6 +10778,17 @@ export function useScoreRecords() {
           status: "good",
           date: "2026-08-17T15:30:00",
           replay: "th20_ud0093.rpy",
+          detail: "-",
+        },
+      },
+    },
+    "はる": {
+      th20: {
+        MarisaY2: {
+          score: 611917470,
+          status: "good",
+          date: "2026-08-21T15:30:00",
+          replay: "th20_ud0094.rpy",
           detail: "-",
         },
       },

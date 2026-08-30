@@ -28,6 +28,20 @@ export function UseReleases(): Release[] {
   return [
     {
       version: "1.2.43",
+      date: "2026-08-29",
+      changes: [
+		{ type: "tpl", id: "add_record", game: "th12", shot: "MarisaB", player:"Novus" },
+		{ type: "tpl", id: "add_record", game: "th12", shot: "SanaeA", player:"Novus" },
+		{ type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"Novus" },
+		{ type: "tpl", id: "add_record", game: "th14", shot: "MarisaA", player:"Oscar" },
+		{ type: "tpl", id: "add_record", game: "th18", shot: "Sanae", player:"bun" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG1", player:"はちじ" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"はる" },
+
+      ],
+    },
+    {
+      version: "1.2.43",
       date: "2026-08-20",
       changes: [
 		{ type: "tpl", id: "add_record", game: "th128", shot: "Cirno", player:"Novus" },
