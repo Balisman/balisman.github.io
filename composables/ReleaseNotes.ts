@@ -28,7 +28,7 @@ export function UseReleases(): Release[] {
   return [
     {
       version: "1.2.45",
-      date: "2026-09-09",
+      date: "2026-09-10",
       changes: [
         { type: "text", text: { ja: "基準スコア変更 : 鬼形獣 nonカワウソ 13億→14億, 16億→18億", en: "Changed th17 non-otter threshold: 1.3B→1.4B, 1.6B→1.8B" } },
         { type: "text", text: { ja: "東方紅魔郷NCに対応", en: "Added support for th06NC" } },

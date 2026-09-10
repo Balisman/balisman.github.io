@@ -2112,6 +2112,7 @@ export function useScoreRecords() {
           replay: "th18_ud0041.rpy",
           detail: "-",
         },
+      },
       th20: {
         MarisaY2: {
           score: 603707640,
