@@ -187,9 +187,6 @@
     <UCard class="my-5">
       <template #header>
         <p>
-          <UBadge class="capitalize" variant="subtle" color="info">
-            {{ $t("global.threshold_score_names.good") }}
-          </UBadge>
           {{ $t("pages.about.score_FAQ.title") }}
         </p>
       </template>
