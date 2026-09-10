@@ -190,6 +190,15 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
+      th06NC: {
+        MarisaB: {
+          score: 626049470,
+          status: "great",
+          date: "2026-09-10T15:30:00",
+          replay: "th6_0001.rpy",
+          detail: "-",
+        },
+      },
       th10: {
         ReimuA: {
           score: 951845620,
@@ -863,7 +872,7 @@ export function useScoreRecords() {
         },
         MarisaW: {
           score: 1666161640,
-          status: "excellent",
+          status: "great",
           date: "2026-03-15T15:30:00",
           replay: "th17_ud0074.rpy",
           detail: "-",
@@ -884,7 +893,7 @@ export function useScoreRecords() {
         },
         YoumuW: {
           score: 1665899150,
-          status: "excellent",
+          status: "great",
           date: "2026-05-08T15:30:00",
           replay: "th17_ud0092.rpy",
           detail: "-",
@@ -2800,7 +2809,7 @@ export function useScoreRecords() {
         },
         ReimuE: {
           score: 1324598310,
-          status: "great",
+          status: "good",
           date: "2021-10-08T15:30:00",
           replay: "th17_ud0030.rpy",
           detail: "-",
@@ -3154,6 +3163,15 @@ export function useScoreRecords() {
           status: "excellent",
           date: "2026-03-03T15:30:00",
           replay: "th6_ud0101.rpy",
+          detail: "-",
+        },
+      },
+      th06NC: {
+        ReimuB: {
+          score: 665500070,
+          status: "great",
+          date: "2026-09-10T15:30:00",
+          replay: "th6_0002.rpy",
           detail: "-",
         },
       },
@@ -4874,7 +4892,7 @@ export function useScoreRecords() {
         },
         YoumuE: {
           score: 1649393610,
-          status: "excellent",
+          status: "great",
           date: "2026-03-25T15:30:00",
           replay: "th17_ud0081.rpy",
           detail: "-",
@@ -7045,14 +7063,14 @@ export function useScoreRecords() {
       th17: {
         ReimuW: {
           score: 1383653020,
-          status: "great",
+          status: "good",
           date: "2023-04-29T15:30:00",
           replay: "th17_ud0023.rpy",
           detail: "-",
         },
         ReimuE: {
           score: 1379151480,
-          status: "great",
+          status: "good",
           date: "2023-04-30T15:30:00",
           replay: "th17_ud0024.rpy",
           detail: "-",

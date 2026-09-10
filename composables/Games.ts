@@ -10,7 +10,7 @@ export function useGames() {
     th06: {
       name: "composables.Games.th06.title",
       color: {
-        bg: "#AA2222",
+        bg: "#990000",
         txt: "#FFFFFF",
       },
       shot_types: {
@@ -18,6 +18,19 @@ export function useGames() {
         ReimuB: { name: "composables.Games.th06.shot_types.reimu_b" },
         MarisaA: { name: "composables.Games.th06.shot_types.marisa_a" },
         MarisaB: { name: "composables.Games.th06.shot_types.marisa_b" },
+      },
+    },
+    th06NC: {
+      name: "composables.Games.th06NC.title",
+      color: {
+        bg: "#990000",
+        txt: "#FFFFFF",
+      },
+      shot_types: {
+        ReimuA: { name: "composables.Games.th06NC.shot_types.reimu_a" },
+        ReimuB: { name: "composables.Games.th06NC.shot_types.reimu_b" },
+        MarisaA: { name: "composables.Games.th06NC.shot_types.marisa_a" },
+        MarisaB: { name: "composables.Games.th06NC.shot_types.marisa_b" },
       },
     },
     th07Ex: {

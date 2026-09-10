@@ -40,6 +40,13 @@ composables:
         reimu_b: 霊夢B
         marisa_a: 魔理沙A
         marisa_b: 魔理沙B
+    th06NC:
+      title: 東方紅魔郷NC
+      shot_types:
+        reimu_a: 霊夢A
+        reimu_b: 霊夢B
+        marisa_a: 魔理沙A
+        marisa_b: 魔理沙B
     th07:
       title:
         ex: 東方妖々夢EX
@@ -232,72 +239,29 @@ pages:
       good:
         content:
           lists:
-            th07_100mil:
-              question: Q. 妖々夢10億では駄目なのですか？
-              answer: A. 駄目です。理由はNNFSしただけで容易に達成可能だから
-            th08_200mil:
-              question: Q. 永夜抄20億では駄目なのですか？
-              answer: A. 駄目です。理由はNMFSしただけで容易に達成可能だから
-            th10_950mil:
-              question: Q. 風神録9.5億は簡単過ぎませんか？
-              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
-            th11_100mil:
-              question: Q. 地霊殿10億は簡単過ぎませんか？
-              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
-            th16_200mil:
-              question: Q. 天空璋20億の難易度高くないですか？
-              answer: A. ある程度は達成に労力がかかるスコアに設定しています
-            th17_not_otter_150mil:
-              question: Q. 鬼形獣notカワウソ15億は厳しすぎませんか？
-              answer: A. 情報が乏しく基準設定が困難であるため全機体共通のスコアに設定しています。有識者の意見があれば下方修正される可能性があります
-            th18_300mil:
-              question: Q. 虹龍洞30億の難易度高くないですか？
-              answer: A. クリア難易度自体は他作と比較してかなり低いので大台スコアを高めに設定しています
             garbage_shot_type:
               question: Q. 残念機体に対する配慮はしないのですか？
               answer: A. 全機体現実的に達成可能な大台スコアに設定しています。ただしスコアを稼ぎやすい機体よりは達成難易度が高くなります
-            th20_compatible:
-              question: Q. 錦上京への対応はいつですか？
-              answer: A. PIVバグの関係で集計方法が定まらず見通しが立ちません
             th20_fixed_piv:
               question: Q. 錦上京のPIVバグ修正スコアは集計しないのですか？
               answer: A. 同一作品を異なる集計方法で2つ掲載するのはわかりづらいので別カテゴリーとして扱うことはしませんが、素点未修正でリプレイ再生した際に掲載条件を満たしていれば掲載します
             win98_support:
               question: Q. 旧作への対応はしないのですか？
-              answer: A. 旧作に対応する予定はありません
+              answer: A. このウェブサイトではサポートしません。代わりに、{maribel}さんのウェブサイトでサポートしています。
+              tags:
+                maribel: Maribel
             th09_support:
               question: Q. 花映塚への対応はしないのですか？
               answer: A. 有識者の意見があれば対応可能です
             publish_my_record:
               question: Q. 私の記録が追加されないのですが？
-              answer: A. {github}もしくは{balisman}にご報告お願いします。気付き次第追加します。
+              answer: A. 前回の更新から最大2週間お待ちください。それでも追加されない場合は、{github}に問題を報告いただくか、{balisman}までお問い合わせください。
               tags:
                 github: github
                 balisman: Balisman
             update_frequency:
               question: Q. 更新頻度はどのくらいですか？
-              answer: A. 週に1回程度はチェックしますが、即日更新は確約できません
-            recommendation:
-              question: Q. ズバリどの作品がおすすめですか？
-              answer: A. 良心的な達成難易度と思われるのは達成者が多い作品ですが、自分がプレイしたい作品の方がモチベを保ちやすいです
-      great:
-        content:
-          lists:
-            score_decrease:
-              question: Q. 基準スコアが達成できない機体があるので基準スコアを下げてくれませんか？
-              answer: A. 達成難易度よりも目標スコアとしてのキリの良さを重視しているため、一部達成不可能な機体が存在します。ただ、達成難易度で調整を加えると煩雑でわかりづらくなるのでわかりやすさを犠牲にするような調整は行いません。
-      excellent:
-        content:
-          lists:
-            score_decrease:
-              question: Q. 基準スコアが達成できない機体があるので基準スコアを下げてくれませんか？
-              answer: A. 基準スコア(Gold)については上級者が目指す大目標として設定しているので難易度を理由に基準スコアを下げることはありません。ただし現実的に達成困難と考えられる基準スコアについては修正する可能性があります。
-            difficulty_gap:
-              question: Q. 作品間の難易度格差が大きくないでしょうか？
-              answer: A. 数字のキリの良さを重視するとどうしても難易度のばらつきが出てしまい、基準スコア(Gold)ではその影響がモロに出てしまいますが一定以上の難易度が保証されていれば問題ないと考えています。
-            th20_gold_achiever:
-              question: Q. 錦上京の達成者が0人なのですが基準スコアを下げないのですか？
-              answer: A. 現実的に可能なスコアと想定されるので基準スコアを下げる予定はありません。むしろリリース数ヶ月で簡単に達成できてしまうスコアでは大目標としては低すぎると思っています。
+              answer: A. 2週に1回程度はチェックしますが、即日更新は確約できません
     additional_info:
       title: 補足
       content: |-
@@ -330,6 +294,10 @@ pages:
       th06:
         excellent: 6億
         great: 5.5億
+        good: 5億
+      th06NC:
+        excellent: 7億
+        great: 6億
         good: 5億
       th07Ex:
         excellent: 14億
@@ -376,8 +344,8 @@ pages:
         great: 25億
         good: 20億
       th17:
-        excellent: カワウソ 25億 / 非カワウソ 16億
-        great: カワウソ 20億 / 非カワウソ 13億
+        excellent: カワウソ 25億 / 非カワウソ 18億
+        great: カワウソ 20億 / 非カワウソ 14億
         good: カワウソ 15億 / 非カワウソ 10億
       th18:
         excellent: 咲夜 80億 / その他 40億

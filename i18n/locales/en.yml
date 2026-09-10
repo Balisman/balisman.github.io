@@ -40,6 +40,13 @@ composables:
         reimu_b: Reimu B
         marisa_a: Marisa A
         marisa_b: Marisa B
+    th06NC:
+      title: EoSD-NC
+      shot_types:
+        reimu_a: Reimu A
+        reimu_b: Reimu B
+        marisa_a: Marisa A
+        marisa_b: Marisa B
     th07:
       title:
         ex: PCB EX
@@ -193,7 +200,7 @@ pages:
         The permitted external tools are: {br}
         vpatch, for the purpose of improving the performance of the game. Bug fixes such as the fix for the Marisa B laser bug in MoF are prohibited. {br}
         thprac, for the purpose of practice and desync prevention. Using any of the cheat options in live play is prohibited, except in UM, in which the use of Market Manipulation is allowed. The full play must obtain the cards in the shop. {br}
-        For plays where PIV was modified using external tools in th20, if the threshold is exceeded when replaying without external tools, they will be subject to publishing.
+        For plays where PIV was modified using external tools in th20, if the threshold is exceeded when replaying without external tools, they can be published.
     compatible_games:
       title: Compatible Games
     threshold_scores:
@@ -211,85 +218,40 @@ pages:
           for_experienced: It cannot be easily achieved by strong players that simply watch someone's replay and imitate the strategies
       great:
         content: |-
-          The "Super Big" threshold is extremely difficult to achieve and is intended for players who have thoroughly mastered the game. {br}
-          If you can achieve this threshold score, you are able to proudly call yourself a super player. {br}
-          Note that these thresholds are set for the best scoring shottypes, so it may be impossible to achieve this threshold with the weaker shottypes.
+          The Bigger threshold is intended as an intermediate goal for players who have achieved Big.
       excellent:
         content: |-
-          その作品をやり込んだプレイヤーが大目標として掲げるような非常に達成難易度の高い基準スコアです。
-          こちらについてはスコアアタック上級者以外が目標とすることを想定してはいません。
-          最もスコアが出しやすい機体を基準に設定しているので機体格差が大きい作品では達成が不可能な機体も存在します。
+          The Super Big threshold is very difficult to achieve, being intended as a goal for advanced players. {br}
+          If you can achieve this score, you can proudly call yourself a superplayer! {br}
+          Note that these thresholds are balanced around the highest-scoring shottypes and may be impossible to achieve with weaker shottypes.
     score_FAQ:
       title: Score FAQ
       good:
         content:
-          lists:
-            th07_100mil:
-              question: Q. 妖々夢10億では駄目なのですか？
-              answer: A. 駄目です。理由はNNFSしただけで容易に達成可能だから
-            th08_200mil:
-              question: Q. 永夜抄20億では駄目なのですか？
-              answer: A. 駄目です。理由はNMFSしただけで容易に達成可能だから
-            th10_950mil:
-              question: Q. 風神録9.5億は簡単過ぎませんか？
-              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
-            th11_100mil:
-              question: Q. 地霊殿10億は簡単過ぎませんか？
-              answer: A. キリが良い数字であることを考慮してこの数値に設定しています
-            th16_200mil:
-              question: Q. 天空璋20億の難易度高くないですか？
-              answer: A. ある程度は達成に労力がかかるスコアに設定しています
-            th17_not_otter_150mil:
-              question: Q. 鬼形獣notカワウソ15億は厳しすぎませんか？
-              answer: A. 情報が乏しく基準設定が困難であるため全機体共通のスコアに設定しています。有識者の意見があれば下方修正される可能性があります
-            th18_300mil:
-              question: Q. 虹龍洞30億の難易度高くないですか？
-              answer: A. クリア難易度自体は他作と比較してかなり低いので大台スコアを高めに設定しています
+          lists:    
             garbage_shot_type:
-              question: Q. 残念機体に対する配慮はしないのですか？
-              answer: A. 全機体現実的に達成可能な大台スコアに設定しています。ただしスコアを稼ぎやすい機体よりは達成難易度が高くなります
-            th20_compatible:
-              question: Q. 錦上京への対応はいつですか？
-              answer: A. PIVバグの関係で集計方法が定まらず見通しが立ちません
+              question: Q. Do you consider low score potential shottypes?
+              answer: A. Almost all shottypes should be able to reach the Big threshold, but it can be very difficult. However, some shottypes may not be able to achieve the Bigger or Super Big threshold.
             th20_fixed_piv:
               question: Q. Can PIV be fixed for FW?
               answer: A. It has been decided that the threshold will be the score obtained with unfixed PIV. Runs with a fixed PIV score may not be considered, but can still be added if it surpasses the score threshold with unfixed PIV playback.
             win98_support:
-              question: Q. 旧作への対応はしないのですか？
-              answer: A. 旧作に対応する予定はありません
+              question: Q. Will you support PC-98 games?
+              answer: A. This site will not support PC-98 games. It is supported on {maribel} instead.
+              tags:
+                maribel: Maribel's website
             th09_support:
               question: Q. Will there be support for PoFV?
               answer: A. It could be supported in the future if some thresholds are provided by some expert level players.
             publish_my_record:
-              question: Q. 私の記録が追加されないのですが？
-              answer: A. {github}もしくは{nyanko}にご報告お願いします。気付き次第追加します。
+              question: Q. How do I get my score published?
+              answer: A. Please wait up to two weeks since the last update. If it is still missing, file an issue on {github}.
               tags:
                 github: GitHub
                 balisman: Balisman
             update_frequency:
-              question: Q. 更新頻度はどのくらいですか？
-              answer: A. 週に1回は必ずチェックしますが、即日更新は確約できません
-            recommendation:
-              question: Q. ズバリどの作品がおすすめですか？
-              answer: A. 達成難易度が良心的と思われるのは達成者が多い作品ですが、自分がプレイしたい作品の方がモチベを保ちやすいです
-      great:
-        content:
-          lists:
-            score_decrease:
-              question: Q. 超大台が達成できない機体があるので基準スコアを下げてくれませんか？
-              answer: A. 超大台スコアについては上級者が目指す大目標として設定しているので難易度を理由に基準スコアを下げることはありません。ただし現実的に不可能と考えられる基準スコアについては修正する可能性があります
-      excellent:
-        content:
-          lists:
-            score_decrease:
-              question: Q. 基準スコアが達成できない機体があるので基準スコアを下げてくれませんか？
-              answer: A. 基準スコア(Lunatic)については上級者が目指す大目標として設定しているので難易度を理由に基準スコアを下げることはありません。ただし現実的に達成困難と考えられる基準スコアについては修正する可能性があります。
-            difficulty_gap:
-              question: Q. 作品間の難易度格差が大きくないでしょうか？
-              answer: A. 数字のキリの良さを重視するとどうしても難易度のばらつきが出てしまい、基準スコア(Lunatic)ではその影響がモロに出てしまいますが一定以上の難易度が保証されていれば問題ないと考えています。
-            th20_gold_achiever:
-              question: Q. 錦上京の達成者が0人なのですが基準スコアを下げないのですか？
-              answer: A. 現実的に可能なスコアと想定されるので基準スコアを下げる予定はありません。むしろリリース数ヶ月で簡単に達成できてしまうスコアでは大目標としては低すぎると思っています。
+              question: Q. How often are updates?
+              answer: A. At least once every two weeks.
     additional_info:
       title: Additional Information
       content: |-
@@ -319,6 +281,10 @@ pages:
       th06:
         excellent: 600M
         great: 550M
+        good: 500M
+      th06NC:
+        excellent: 700M
+        great: 600M
         good: 500M
       th07Ex:
         excellent: 1.4B
@@ -365,8 +331,8 @@ pages:
         great: 2.5B
         good: 2B
       th17:
-        excellent: Otter 2.5B / Non Otter 1.6B
-        great: Otter 2B / Non Otter 1.3B
+        excellent: Otter 2.5B / Non Otter 1.8B
+        great: Otter 2B / Non Otter 1.4B
         good: Otter 1.5B / Non Otter 1B
       th18:
         excellent: Sakuya 8B / others 4B
