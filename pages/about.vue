@@ -223,6 +223,13 @@
           {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.answer")
           }}
         </li>
+		<SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.win98_support.answer" tag="li">
+        <template #maribel>
+          <NuxtLink href="https://maribelhearn.com/pc98" target="_blank">
+            {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.tags.maribel") }}
+          </NuxtLink>
+        </template>
+		</SafeI18nT>
         <li>
           {{ $t("pages.about.score_FAQ.good.content.lists.th09_support.question")
           }}
@@ -321,11 +328,6 @@
         <template #github>
           <NuxtLink href="https://github.com/Balisman/balisman.github.io" target="_blank">
             {{ $t("pages.about.operation_policy.tags.github") }}
-          </NuxtLink>
-        </template>
-        <template #maribel>
-          <NuxtLink href="https://maribelhearn.com/pc98" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.maribel") }}
           </NuxtLink>
         </template>
       </SafeI18nT>
