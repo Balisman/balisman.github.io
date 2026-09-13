@@ -25,7 +25,7 @@ export function useNewScoreRecords() {
       game: "th06NC",
       shot_type: "ReimuB",
       score: 665500070,
-      status: "excellent",
+      status: "great",
       date: "2026-09-12T15:30:00",
       replay: "th6_0003.rpy",
       detail: "-",
