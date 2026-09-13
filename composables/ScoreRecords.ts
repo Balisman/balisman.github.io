@@ -786,6 +786,15 @@ export function useScoreRecords() {
       },
     },
     Balisman: {
+      th06NC: {
+        MarisaB: {
+          score: 531684970,
+          status: "good",
+          date: "2026-09-12T15:30:00",
+          replay: "th6_0004.rpy",
+          detail: "-",
+        },
+      },
       th11: {
         ReimuA: {
           score: 1050595700,
@@ -3196,6 +3205,13 @@ export function useScoreRecords() {
           score: 665500070,
           status: "great",
           date: "2026-09-10T15:30:00",
+          replay: "th6_0003.rpy",
+          detail: "-",
+        },
+        MarisaB: {
+          score: 705589190,
+          status: "excellent",
+          date: "2026-09-12T15:30:00",
           replay: "th6_0002.rpy",
           detail: "-",
         },
@@ -10850,6 +10866,13 @@ export function useScoreRecords() {
     },
     "はる": {
       th20: {
+        MarisaB2: {
+          score: 651499250,
+          status: "good",
+          date: "2026-09-11T15:30:00",
+          replay: "th20_ud0100.rpy",
+          detail: "-",
+        },
         MarisaY2: {
           score: 611917470,
           status: "good",
