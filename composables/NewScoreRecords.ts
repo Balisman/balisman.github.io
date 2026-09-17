@@ -11,7 +11,7 @@ export function useNewScoreRecords() {
       detail: "-",
     },
 	{
-      player: "Balimsan",
+      player: "Balisman",
       game: "th06NC",
       shot_type: "MarisaA",
       score: 532736790,

@@ -32,7 +32,7 @@ export function UseReleases(): Release[] {
       changes: [
 		{ type: "tpl", id: "add_record", game: "th06NC", shot: "ReimuA", player:"Draconic" },
 		{ type: "tpl", id: "add_record", game: "th06NC", shot: "MarisaA", player:"kana_th6" },
-		{ type: "tpl", id: "add_record", game: "th06NC", shot: "MarisaA", player:"Balimsan" },
+		{ type: "tpl", id: "add_record", game: "th06NC", shot: "MarisaA", player:"Balisman" },
 		{ type: "tpl", id: "add_record", game: "th06NC", shot: "ReimuA", player:"kana_th6" },
 		{ type: "tpl", id: "add_record", game: "th11", shot: "ReimuA", player:"Kaede" },
       ],
