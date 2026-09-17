@@ -219,10 +219,6 @@
             )
           }}
         </li>
-        <li>
-          {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.answer")
-          }}
-        </li>
 		<SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.win98_support.answer" tag="li">
         <template #maribel>
           <NuxtLink href="https://maribelhearn.com/pc98" target="_blank">

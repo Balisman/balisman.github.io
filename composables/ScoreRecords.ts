@@ -787,6 +787,13 @@ export function useScoreRecords() {
     },
     Balisman: {
       th06NC: {
+		MarisaA: {
+          score: 532736790,
+          status: "good",
+          date: "2026-09-15T15:30:00",
+          replay: "th6_0007.rpy",
+          detail: "-",
+        },
         MarisaB: {
           score: 531684970,
           status: "good",
@@ -1746,6 +1753,17 @@ export function useScoreRecords() {
           status: "great",
           date: "2011-01-16T15:30:00",
           replay: "th12_ud0018.rpy",
+          detail: "-",
+        },
+      },
+    },
+    Draconic: {
+      th06NC: {
+		ReimuA: {
+          score: 500725590,
+          status: "good",
+          date: "2026-09-14T15:30:00",
+          replay: "th6_0005.rpy",
           detail: "-",
         },
       },
@@ -3159,7 +3177,16 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
-      th12: {
+      th11: {
+		ReimuA: {
+          score: 1021036190,
+          status: "good",
+          date: "2026-09-14T15:30:00",
+          replay: "th11_ud0175.rpy",
+          detail: "-",
+        },
+      },
+	  th12: {
         SanaeB: {
           score: 550612100,
           status: "good",
@@ -3201,11 +3228,25 @@ export function useScoreRecords() {
         },
       },
       th06NC: {
+		ReimuA: {
+          score: 682182860,
+          status: "great",
+          date: "2026-09-16T15:30:00",
+          replay: "th6_0008.rpy",
+          detail: "-",
+        },
         ReimuB: {
           score: 665500070,
           status: "great",
           date: "2026-09-10T15:30:00",
           replay: "th6_0003.rpy",
+          detail: "-",
+        },
+		MarisaA: {
+          score: 703674450,
+          status: "excellent",
+          date: "2026-09-13",
+          replay: "th6_0006.rpy",
           detail: "-",
         },
         MarisaB: {
