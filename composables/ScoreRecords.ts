@@ -1783,8 +1783,8 @@ export function useScoreRecords() {
     Draconic: {
       th06NC: {
 		ReimuA: {
-          score: 532266270,
-          status: "good",
+          score: 621998510,
+          status: "great",
           date: "2026-09-22T15:30:00",
           replay: "th6_0010.rpy",
           detail: "-",
