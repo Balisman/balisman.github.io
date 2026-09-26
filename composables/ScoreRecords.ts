@@ -191,11 +191,18 @@ export function useScoreRecords() {
         },
       },
       th06NC: {
-        MarisaB: {
-          score: 626049470,
-          status: "great",
-          date: "2026-09-10T15:30:00",
-          replay: "th6_0001.rpy",
+		MarisaA: {
+          score: 521127170,
+          status: "good",
+          date: "2026-09-20T15:30:00",
+          replay: "th6_0011.rpy",
+          detail: "-",
+        },
+		MarisaB: {
+          score: 716169860,
+          status: "excellent",
+          date: "2026-09-24T15:30:00",
+          replay: "th6_0014.rpy",
           detail: "-",
         },
       },
@@ -788,10 +795,10 @@ export function useScoreRecords() {
     Balisman: {
       th06NC: {
 		MarisaA: {
-          score: 532736790,
+          score: 560070200,
           status: "good",
-          date: "2026-09-15T15:30:00",
-          replay: "th6_0007.rpy",
+          date: "2026-09-20T15:30:00",
+          replay: "th6_0012.rpy",
           detail: "-",
         },
         MarisaB: {
@@ -965,6 +972,22 @@ export function useScoreRecords() {
       },
     },
     "Bat Mox": {
+      th06NC: {
+		ReimuB: {
+          score: 532266270,
+          status: "good",
+          date: "2026-09-19T15:30:00",
+          replay: "th6_0019.rpy",
+          detail: "-",
+        },
+		MarisaB: {
+          score: 609012870,
+          status: "great",
+          date: "2026-09-25T15:30:00",
+          replay: "th6_0015.rpy",
+          detail: "-",
+        },
+      },
       th13: {
         Marisa: {
           score: 577384650,
@@ -1760,10 +1783,10 @@ export function useScoreRecords() {
     Draconic: {
       th06NC: {
 		ReimuA: {
-          score: 500725590,
+          score: 532266270,
           status: "good",
-          date: "2026-09-14T15:30:00",
-          replay: "th6_0005.rpy",
+          date: "2026-09-22T15:30:00",
+          replay: "th6_0010.rpy",
           detail: "-",
         },
       },
@@ -4841,6 +4864,15 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
+      th06NC: {
+		MarisaB: {
+          score: 858243730,
+          status: "excellent",
+          date: "2026-09-25T15:30:00",
+          replay: "th6_0013.rpy",
+          detail: "-",
+        },
+      },
       th07Ex: {
         ReimuB: {
           score: 1330029230,
@@ -5804,6 +5836,17 @@ export function useScoreRecords() {
           status: "good",
           date: "2021-01-29T15:30:00",
           replay: "th10_ud0094.rpy",
+          detail: "-",
+        },
+      },
+    },
+    srty7462: {
+      th06NC: {
+		MarisaB: {
+          score: 504396710,
+          status: "good",
+          date: "2026-09-19T15:30:00",
+          replay: "th6_0018.rpy",
           detail: "-",
         },
       },
@@ -6927,6 +6970,22 @@ export function useScoreRecords() {
           status: "good",
           date: "2015-01-21T15:30:00",
           replay: "th6_ud0073.rpy",
+          detail: "-",
+        },
+      },
+      th06NC: {
+		ReimuA: {
+          score: 502949430,
+          status: "good",
+          date: "2026-09-19T15:30:00",
+          replay: "th6_0009.rpy",
+          detail: "-",
+        },
+		MarisaB: {
+          score: 522257470,
+          status: "good",
+          date: "2026-09-21T15:30:00",
+          replay: "th6_0017.rpy",
           detail: "-",
         },
       },
@@ -8921,11 +8980,11 @@ export function useScoreRecords() {
         },
       },
       th20: {
-        MarisaG1: {
-          score: 643071110,
+		MarisaG1: {
+          score: 663905920,
           status: "good",
-          date: "2026-09-08T15:30:00",
-          replay: "th20_ud0140.rpy",
+          date: "2026-09-25T15:30:00",
+          replay: "th20_ud0101.rpy",
           detail: "-",
         },
       },
@@ -9150,7 +9209,16 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
-      th10: {
+      th06NC: {
+		MarisaB: {
+          score: 615586040,
+          status: "great",
+          date: "2026-09-23T15:30:00",
+          replay: "th6_0016.rpy",
+          detail: "-",
+        },
+      },
+	  th10: {
         ReimuA: {
           score: 957023210,
           status: "good",

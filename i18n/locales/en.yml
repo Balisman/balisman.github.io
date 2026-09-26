@@ -41,7 +41,7 @@ composables:
         marisa_a: Marisa A
         marisa_b: Marisa B
     th06NC:
-      title: EoSD-NC
+      title: EoSD:NC
       shot_types:
         reimu_a: Reimu A
         reimu_b: Reimu B
