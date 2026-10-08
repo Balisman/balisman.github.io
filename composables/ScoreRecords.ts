@@ -16,6 +16,15 @@ export function useScoreRecords() {
     >
   > = {
     WEF: {
+      th06NC: {
+		MarisaB: {
+          score: 519074590,
+          status: "good",
+          date: "2025-10-06T15:30:00",
+          replay: "th6_0030.rpy",
+          detail: "-",
+        },
+      },
       th11: {
         ReimuA: {
           score: 1008234570,
@@ -3041,10 +3050,10 @@ export function useScoreRecords() {
       },
       th06NC: {
 		ReimuB: {
-          score: 817985630,
+          score: 873870410,
           status: "excellent",
-          date: "2026-09-30T15:30:00",
-          replay: "th6_0020.rpy",
+          date: "2026-10-06T15:30:00",
+          replay: "th6_0028.rpy",
           detail: "-",
         },
       },
@@ -9049,6 +9058,13 @@ export function useScoreRecords() {
           replay: "th20_ud0104.rpy",
           detail: "-",
         },
+		MarisaR2: {
+          score: 679400070,
+          status: "good",
+          date: "2026-10-05T15:30:00",
+          replay: "th20_ud0122.rpy",
+          detail: "-",
+        },
 		MarisaB1: {
           score: 624220270,
           status: "good",
@@ -9061,6 +9077,20 @@ export function useScoreRecords() {
           status: "good",
           date: "2026-10-02T15:30:00",
           replay: "th20_ud0112.rpy",
+          detail: "-",
+        },
+		MarisaY1: {
+          score: 642956870,
+          status: "good",
+          date: "2026-10-06T15:30:00",
+          replay: "th20_ud0114.rpy",
+          detail: "-",
+        },
+		MarisaY2: {
+          score: 683726530,
+          status: "good",
+          date: "2026-10-05T15:30:00",
+          replay: "th20_ud0124.rpy",
           detail: "-",
         },
 		MarisaG1: {
@@ -9293,6 +9323,27 @@ export function useScoreRecords() {
         },
       },
       th06NC: {
+		ReimuA: {
+          score: 613865750,
+          status: "great",
+          date: "2026-10-06T15:30:00",
+          replay: "th6_0026.rpy",
+          detail: "-",
+        },
+		ReimuB: {
+          score: 735574370,
+          status: "excellent",
+          date: "2026-10-05T15:30:00",
+          replay: "th6_0027.rpy",
+          detail: "-",
+        },
+		MarisaA: {
+          score: 615729650,
+          status: "great",
+          date: "2026-10-07T15:30:00",
+          replay: "th6_0029.rpy",
+          detail: "-",
+        },
 		MarisaB: {
           score: 722646910,
           status: "excellent",
@@ -11067,6 +11118,13 @@ export function useScoreRecords() {
         },
       },
       th20: {
+		ReimuY2: {
+          score: 689052030,
+          status: "good",
+          date: "2026-10-06T15:30:00",
+          replay: "th20_ud0121.rpy",
+          detail: "-",
+        },
 		MarisaR1: {
           score: 614647250,
           status: "good",
@@ -11096,10 +11154,10 @@ export function useScoreRecords() {
           detail: "-",
         },
 		MarisaY1: {
-          score: 604895450,
+          score: 652349010,
           status: "good",
-          date: "2026-10-03T15:30:00",
-          replay: "th20_ud0113.rpy",
+          date: "2026-10-04T15:30:00",
+          replay: "th20_ud0123.rpy",
           detail: "-",
         },
         MarisaY2: {
