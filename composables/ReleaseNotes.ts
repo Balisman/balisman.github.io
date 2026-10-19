@@ -27,6 +27,25 @@ export type Release = {
 export function UseReleases(): Release[] {
   return [
     {
+      version: "1.2.51",
+      date: "2026-10-19",
+      changes: [
+		{ type: "tpl", id: "add_record", game: "th06NC", shot: "MarisaB", player:"WEF" },
+		{ type: "tpl", id: "add_record", game: "th06NC", shot: "MarisaB", player:"Balisman" },
+		{ type: "tpl", id: "add_record", game: "th11", shot: "ReimuA", player:"一目連" },
+		{ type: "tpl", id: "add_record", game: "th14", shot: "ReimuA", player:"Reima.H" },
+		{ type: "tpl", id: "add_record", game: "th18", shot: "Reimu", player:"雨風" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaR1", player:"リボース" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaR1", player:"もち" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaR2", player:"もち" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaB1", player:"リボース" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaB2", player:"もち" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"もち" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"すず" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG1", player:"もち" },
+      ],
+    },
+    {
       version: "1.2.50",
       date: "2026-10-11",
       changes: [
