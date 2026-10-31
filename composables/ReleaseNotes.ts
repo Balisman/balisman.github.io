@@ -27,6 +27,19 @@ export type Release = {
 export function UseReleases(): Release[] {
   return [
     {
+      version: "1.2.53",
+      date: "2026-10-31",
+      changes: [
+		{ type: "tpl", id: "add_record", game: "th06NC", shot: "ReimuB", player:"int" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaY2", player:"はる" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuG1", player:"ラムラムネ" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuB1", player:"もち" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuG2", player:"norn" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "MarisaG2", player:"はる" },
+		{ type: "tpl", id: "add_record", game: "th20", shot: "ReimuB2", player:"もち" },
+      ],
+    },
+    {
       version: "1.2.52",
       date: "2026-10-26",
       changes: [
