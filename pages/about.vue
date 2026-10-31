@@ -13,14 +13,14 @@
       </template>
       <SafeI18nT keypath="pages.about.publish_record.content" tag="p">
         <template #silentselene>
-          <NuxtLink href="https://www.silentselene.net/" target="_blank">
+          <font color="#0693E3"><u><font color="#0693E3"><u><NuxtLink href="https://www.silentselene.net/" target="_blank">
             {{ $t("pages.about.publish_record.tags.silentselene") }}
-          </NuxtLink>
+          </NuxtLink></u></font></u></font>
         </template>
         <template #balisman>
-          <NuxtLink href="https://github.com/Balisman" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
             {{ $t("pages.about.publish_record.tags.balisman") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
         <template #br>
           <br />
@@ -221,9 +221,9 @@
         </li>
 		<SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.win98_support.answer" tag="li">
         <template #maribel>
-          <NuxtLink href="https://maribelhearn.com/pc98" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://maribelhearn.com/pc98" target="_blank">
             {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.tags.maribel") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
 		</SafeI18nT>
         <li>
@@ -242,20 +242,20 @@
         </li>
         <SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.publish_my_record.answer" tag="li">
           <template #github>
-            <NuxtLink href="https://github.com/Balisman/balisman.github.io/issues" target="_blank">
+            <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman/balisman.github.io/issues" target="_blank">
               {{ $t(
                   "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github",
                 )
               }}
-            </NuxtLink>
+            </NuxtLink></u></font>
           </template>
           <template #balisman>
-            <NuxtLink href="https://github.com/Balisman" target="_blank">
+            <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
               {{ $t(
                   "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.balisman",
                 )
               }}
-            </NuxtLink>
+            </NuxtLink></u></font>
           </template>
         </SafeI18nT>
         <li>
@@ -292,9 +292,9 @@
           <br />
         </template>
         <template #balisman>
-          <NuxtLink href="https://github.com/Balisman" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
             {{ $t("pages.about.operator.tags.balisman") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
       </SafeI18nT>
     </UCard>
@@ -307,24 +307,24 @@
           <br />
         </template>
         <template #wefmaika>
-          <NuxtLink href="https://wefma.net" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://wefma.net" target="_blank">
             {{ $t("pages.about.operation_policy.tags.wefmaika") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
         <template #nyanko>
-          <NuxtLink href="https://x.com/flower874_" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://x.com/flower874_" target="_blank">
             {{ $t("pages.about.operation_policy.tags.nyanko") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
         <template #balisman>
-          <NuxtLink href="https://github.com/Balisman" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
             {{ $t("pages.about.operation_policy.tags.balisman") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
         <template #github>
-          <NuxtLink href="https://github.com/Balisman/balisman.github.io" target="_blank">
+          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman/balisman.github.io" target="_blank">
             {{ $t("pages.about.operation_policy.tags.github") }}
-          </NuxtLink>
+          </NuxtLink></u></font>
         </template>
       </SafeI18nT>
     </UCard>
