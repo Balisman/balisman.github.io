@@ -4958,6 +4958,15 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
+	  th08: {
+		Remilia: {
+          score: 1907726930,
+          status: "good",
+          date: "2026-11-15T15:30:00",
+          replay: "th8_ud0079.rpy",
+          detail: "-",
+        },
+      },
       th10: {
         MarisaC: {
           score: 1000346870,
@@ -7073,6 +7082,20 @@ export function useScoreRecords() {
           status: "good",
           date: "2026-09-19T15:30:00",
           replay: "th6_0009.rpy",
+          detail: "-",
+        },
+		ReimuB: {
+          score: 580312020,
+          status: "good",
+          date: "2026-11-14T15:30:00",
+          replay: "th6_0040.rpy",
+          detail: "-",
+        },
+		MarisaA: {
+          score: 568287730,
+          status: "good",
+          date: "2026-11-07T15:30:00",
+          replay: "th6_0039.rpy",
           detail: "-",
         },
 		MarisaB: {
@@ -11177,11 +11200,18 @@ export function useScoreRecords() {
     },
     "すず": {
       th20: {
+		ReimuY2: {
+          score: 660236440,
+          status: "good",
+          date: "2026-11-07T15:30:00",
+          replay: "th20_ud0157.rpy",
+          detail: "-",
+        },
 		MarisaY2: {
-          score: 702147410,
+          score: 727419900,
           status: "great",
-          date: "2026-10-13T15:30:00",
-          replay: "th20_ud0135.rpy",
+          date: "2026-11-13T15:30:00",
+          replay: "th20_ud0159.rpy",
           detail: "-",
         },
       },
@@ -11196,8 +11226,16 @@ export function useScoreRecords() {
           detail: "-",
         },
       },
+      th18: {
+		Sakuya: {
+          score: 5891116710,
+          status: "good",
+          date: "2026-11-04T15:30:00",
+          replay: "th18_ud0067.rpy",
+          detail: "-",
+        },
+      },
       th20: {
-
 		ReimuY1: {
           score: 662358070,
           status: "good",
@@ -11262,10 +11300,10 @@ export function useScoreRecords() {
           detail: "-",
         },
 		MarisaG1: {
-          score: 669901840,
-          status: "good",
-          date: "2026-10-03T15:30:00",
-          replay: "th20_ud0114.rpy",
+          score: 727505870,
+          status: "great",
+          date: "2026-11-11T15:30:00",
+          replay: "th20_ud0158.rpy",
           detail: "-",
         },
 		MarisaG2: {
@@ -11347,10 +11385,10 @@ export function useScoreRecords() {
     "雨風": {
       th18: {
 		Reimu: {
-          score: 3524344340,
+          score: 3761238370,
           status: "great",
-          date: "2026-10-16T15:30:00",
-          replay: "th18_ud0066.rpy",
+          date: "2026-11-04T15:30:00",
+          replay: "th18_ud0068.rpy",
           detail: "-",
         },
       },
