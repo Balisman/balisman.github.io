@@ -125,12 +125,12 @@ const links = ref({
     },
     {
       label:
-        "【TWC2024】第5試合 紅魔郷 Extra Scoring　int🌠 vs Rio Mikoshiba🌙 vs Rea Mikoshiba🔆",
+        "【TWC2024】第5試合 紅魔郷 Extra Scoring int🌠 vs Rio Mikoshiba🌙 vs Rea Mikoshiba🔆",
       url: "https://www.youtube.com/watch?v=FzZoAnNqnNg",
     },
     {
       label:
-        "【TWC2024】第5試合 紅魔郷 Extra Scoring　int🌠 vs Rio Mikoshiba🌙 vs Rea Mikoshiba🔆",
+        "【TWC2024】第5試合 紅魔郷 Extra Scoring int🌠 vs Rio Mikoshiba🌙 vs Rea Mikoshiba🔆",
       url: "https://www.youtube.com/watch?v=VwDJlgBzOeY",
     },
     {
@@ -147,11 +147,11 @@ const links = ref({
       url: "https://www.youtube.com/watch?v=kA4kQk03OsQ",
     },
     {
-      label: "【TWC2024】第32試合 妖々夢 Extra Scoring　ina🌠 vs lua🔆",
+      label: "【TWC2024】第32試合 妖々夢 Extra Scoring ina🌠 vs lua🔆",
       url: "https://www.youtube.com/watch?v=SbyWvnGawYM",
     },
     {
-      label: "【TWC2024】第18試合 妖々夢 Phantasm Scoring　Garm🌙 vs Yusuke🔆",
+      label: "【TWC2024】第18試合 妖々夢 Phantasm Scoring Garm🌙 vs Yusuke🔆",
       url: "https://www.youtube.com/watch?v=7nsej02N0Lg",
     },
     {
@@ -178,7 +178,7 @@ const links = ref({
     },
     {
       label:
-        "【TWC2024】第23試合 風神録 Extra Scoring　WONDERFUL CAT🌠 vs harapyon9711🌙",
+        "【TWC2024】第23試合 風神録 Extra Scoring WONDERFUL CAT🌠 vs harapyon9711🌙",
       url: "https://www.youtube.com/watch?v=Q6m5Qr9bheA",
     },
     {
@@ -203,7 +203,7 @@ const links = ref({
     },
     {
       label:
-        "【TWC2024】第20試合 地霊殿 Extra Scoring　Apo🌠 vs KTT🌙 vs Oriens🔆",
+        "【TWC2024】第20試合 地霊殿 Extra Scoring Apo🌠 vs KTT🌙 vs Oriens🔆",
       url: "https://www.youtube.com/watch?v=_KqbbAxBaHM",
     },
     {
@@ -228,7 +228,7 @@ const links = ref({
     },
     {
       label:
-        "【TWC2024】第2試合 神霊廟 Extra Scoring　Hoi(ほーらい)🌠 vs Morth🌙",
+        "【TWC2024】第2試合 神霊廟 Extra Scoring Hoi(ほーらい)🌠 vs Morth🌙",
       url: "https://www.youtube.com/watch?v=gZqgtQfs6LE",
     },
     {
@@ -248,7 +248,7 @@ const links = ref({
     },
     {
       label:
-        "【TWC2024】第25試合 輝針城 Ex-Scoring　Nylilsa(はるか)🌠 vs ASEB🌙 vs Marisa🔆",
+        "【TWC2024】第25試合 輝針城 Ex-Scoring Nylilsa(はるか)🌠 vs ASEB🌙 vs Marisa🔆",
       url: "https://www.youtube.com/watch?v=uzin7ot6oDA",
     },
     {
@@ -258,7 +258,7 @@ const links = ref({
     },
     {
       label:
-        "【TWC2024】第17試合 天空璋 Extra Scoring　Rabuka🌠 vs kicyo(吉)🌙 vs idtn🔆",
+        "【TWC2024】第17試合 天空璋 Extra Scoring Rabuka🌠 vs kicyo(吉)🌙 vs idtn🔆",
       url: "https://www.youtube.com/watch?v=SrRobkraF-0",
     },
     {
@@ -269,6 +269,51 @@ const links = ref({
       label:
         "【TWC2025】第16試合 虹龍洞 Extra Scoring notlol📷 vs smilelkj📱 vs CAT🍁",
       url: "https://www.youtube.com/watch?v=_dR2yM10jno",
+    },
+    {
+      label:
+        "【TWC2026】第3試合 錦上京 Extra Scoring Ecoさわ🐚 vs 節水源一朗🌫️ vs 幽谷もこ👁️",
+      url: "https://www.youtube.com/watch?v=wWRhZHBciUE",
+    },
+    {
+      label:
+        "【TWC2026】第6試合 紺珠伝 Extra Scoring Oscar🐚 vs idtn👁️",
+      url: "https://www.youtube.com/watch?v=khaXdXKbcic",
+    },
+    {
+      label:
+        "【TWC2026】第8試合 大戦争 Extra Scoring がけ🌫️ vs がそりん👁️",
+      url: "https://www.youtube.com/watch?v=p9hUn5URk5s",
+    },
+    {
+      label:
+        "【TWC2026】第9試合 星蓮船 Extra Scoring Lorenzo🐚 vs ニャムニャム🌫️ vs w1theR👁️",
+      url: "https://www.youtube.com/watch?v=WSF0vwIIYVU",
+    },
+    {
+      label:
+        "【TWC2026】第10試合 地霊殿 Extra Scoring Oriens🐚 vs たけのこ🌫️ vs Apo👁",
+      url: "https://www.youtube.com/watch?v=wYKSwu46drs",
+    },
+    {
+      label:
+        "【TWC2026】第11試合 輝針城 Extra Scoring Feng🐚 vs Marbles👁",
+      url: "https://www.youtube.com/watch?v=ZWLWO5MiK8o",
+    },
+    {
+      label:
+        "【TWC2026】第13試合 紅魔郷 Extra Scoring Madoka🐚 vs int🌫️ vs OOSAKA👁",
+      url: "https://www.youtube.com/watch?v=uKLy9EK1_YI",
+    },
+    {
+      label:
+        "【TWC2026】第16試合 鬼形獣 Extra Scoring Borealis 🐚 vs Balisman🌫️ vs Anna says hi👁",
+      url: "https://www.youtube.com/watch?v=aNZdBovUuHA",
+    },
+    {
+      label:
+        "【TWC2026】第31試合 妖々夢 Extra Scoring lua🐚 vs いな🌫️",
+      url: "https://www.youtube.com/watch?v=wnYFpGgreJQ",
     },
   ],
 });
