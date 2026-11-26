@@ -1,35 +1,56 @@
 <template>
-  <UContainer class="py-8">
-    <h1 class="text-xl font-bold mb-6">{{ $t("pages.about.title") }}</h1>
-    <UCard class="my-5">
+  <UContainer class="py-4 sm:py-8 px-3 sm:px-6 text-xs sm:text-sm md:text-base">
+    <h1 class="text-lg sm:text-xl font-bold mb-4 sm:mb-6">
+      {{ $t("pages.about.title") }}
+    </h1>
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.intro.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.intro.title") }}
+        </p>
       </template>
-      <p class="whitespace-pre-line">{{ $t("pages.about.intro.content") }}</p>
+      <p class="whitespace-pre-line">
+        {{ $t("pages.about.intro.content") }}
+      </p>
     </UCard>
-    <UCard class="my-5">
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.publish_record.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.publish_record.title") }}
+        </p>
       </template>
       <SafeI18nT keypath="pages.about.publish_record.content" tag="p">
         <template #silentselene>
-          <font color="#0693E3"><u><font color="#0693E3"><u><NuxtLink href="https://www.silentselene.net/" target="_blank">
-            {{ $t("pages.about.publish_record.tags.silentselene") }}
-          </NuxtLink></u></font></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://www.silentselene.net/" target="_blank">
+                {{ $t("pages.about.publish_record.tags.silentselene") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
         <template #balisman>
-          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
-            {{ $t("pages.about.publish_record.tags.balisman") }}
-          </NuxtLink></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://github.com/Balisman" target="_blank">
+                {{ $t("pages.about.publish_record.tags.balisman") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
         <template #br>
           <br />
         </template>
       </SafeI18nT>
     </UCard>
-    <UCard class="my-5">
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.using_tools.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.using_tools.title") }}
+        </p>
       </template>
       <SafeI18nT keypath="pages.about.using_tools.content" tag="p">
         <template #br>
@@ -37,89 +58,111 @@
         </template>
       </SafeI18nT>
     </UCard>
-    <UCard class="my-5">
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.compatible_games.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.compatible_games.title") }}
+        </p>
       </template>
-      <ul class="flex flex-wrap gap-4 justify-center">
+      <ul class="flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center">
         <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-          <UBadge class="capitalize inline-block px-2 py-0.5 rounded font-semibold text-lg" :style="{
+          <UBadge
+            class="capitalize inline-block px-1.5 sm:px-2 py-0.5 rounded font-semibold text-sm sm:text-base md:text-lg"
+            :style="{
               color: gamesMap[gameThreshold.game].color.txt,
               backgroundColor: gamesMap[gameThreshold.game].color.bg,
-            }">
+            }"
+          >
             {{ $t(gamesMap[gameThreshold.game].name) }}
           </UBadge>
         </li>
       </ul>
     </UCard>
+
     <!-- THRESHOLDS -->
-    <div class="flex items-stretch">
-      <UCard class="my-5">
+    <div class="flex flex-col md:flex-row items-stretch gap-3 sm:gap-4 my-3 sm:my-5">
+      <UCard class="flex-1 min-w-0">
         <template #header>
-          <p>
-            <UBadge class="capitalize" variant="subtle" color="info">
+          <p class="text-sm sm:text-base font-medium">
+            <UBadge class="capitalize text-xs sm:text-sm" variant="subtle" color="info">
               {{ $t("global.threshold_score_names.good") }}
             </UBadge>
             {{ $t("pages.about.threshold_scores.title") }}
           </p>
         </template>
-        <ul class="pl-3 space-y-0.5">
-          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-            <UBadge class="capitalize inline-block px-2 py-0.5 rounded font-semibold" :style="{
+        <ul class="pl-1 sm:pl-3 space-y-1 sm:space-y-0.5">
+          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game" class="break-words">
+            <UBadge
+              class="capitalize inline-block px-1.5 sm:px-2 py-0.5 rounded font-semibold text-xs sm:text-sm"
+              :style="{
                 color: gamesMap[gameThreshold.game].color.txt,
                 backgroundColor: gamesMap[gameThreshold.game].color.bg,
-              }">
+              }"
+            >
               {{ $t(gamesMap[gameThreshold.game].name) }}
-            </UBadge> ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.good`) }}
+            </UBadge>
+            ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.good`) }}
           </li>
         </ul>
       </UCard>
-      <UCard class="my-5">
+
+      <UCard class="flex-1 min-w-0">
         <template #header>
-          <p>
-            <UBadge class="capitalize" variant="subtle" color="secondary">
+          <p class="text-sm sm:text-base font-medium">
+            <UBadge class="capitalize text-xs sm:text-sm" variant="subtle" color="secondary">
               {{ $t("global.threshold_score_names.great") }}
             </UBadge>
             {{ $t("pages.about.threshold_scores.title") }}
           </p>
         </template>
-        <ul class="pl-3 space-y-0.5">
-          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-            <UBadge class="capitalize inline-block px-2 py-0.5 rounded font-semibold" :style="{
+        <ul class="pl-1 sm:pl-3 space-y-1 sm:space-y-0.5">
+          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game" class="break-words">
+            <UBadge
+              class="capitalize inline-block px-1.5 sm:px-2 py-0.5 rounded font-semibold text-xs sm:text-sm"
+              :style="{
                 color: gamesMap[gameThreshold.game].color.txt,
                 backgroundColor: gamesMap[gameThreshold.game].color.bg,
-              }">
+              }"
+            >
               {{ $t(gamesMap[gameThreshold.game].name) }}
-            </UBadge> ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.great`) }}
+            </UBadge>
+            ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.great`) }}
           </li>
         </ul>
       </UCard>
-      <UCard class="my-5">
+
+      <UCard class="flex-1 min-w-0">
         <template #header>
-          <p>
-            <UBadge variant="subtle" color="success">
+          <p class="text-sm sm:text-base font-medium">
+            <UBadge class="text-xs sm:text-sm" variant="subtle" color="success">
               {{ $t("global.threshold_score_names.excellent") }}
             </UBadge>
             {{ $t("pages.about.threshold_scores.title") }}
           </p>
         </template>
-        <ul class="pl-3 space-y-0.5">
-          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game">
-            <UBadge class="capitalize inline-block px-2 py-0.5 rounded font-semibold" :style="{
+        <ul class="pl-1 sm:pl-3 space-y-1 sm:space-y-0.5">
+          <li v-for="gameThreshold in gameThresholds" :key="gameThreshold.game" class="break-words">
+            <UBadge
+              class="capitalize inline-block px-1.5 sm:px-2 py-0.5 rounded font-semibold text-xs sm:text-sm"
+              :style="{
                 color: gamesMap[gameThreshold.game].color.txt,
                 backgroundColor: gamesMap[gameThreshold.game].color.bg,
-              }">
+              }"
+            >
               {{ $t(gamesMap[gameThreshold.game].name) }}
-            </UBadge> ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.excellent`) }}
+            </UBadge>
+            ：{{ $t(`pages.about.thresholds.${gameThreshold.game}.excellent`) }}
           </li>
         </ul>
       </UCard>
     </div>
+
     <!-- BIG THRESHOLD POLICY -->
-    <UCard class="my-5">
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>
-          <UBadge class="capitalize" variant="subtle" color="info">
+        <p class="text-sm sm:text-base font-medium">
+          <UBadge class="capitalize text-xs sm:text-sm" variant="subtle" color="info">
             {{ $t("global.threshold_score_names.good") }}
           </UBadge>
           {{ $t("pages.about.threshold_score_policy.title") }}
@@ -130,32 +173,24 @@
           <br />
         </template>
       </SafeI18nT>
-      <ul class="list-disc pl-5 space-y-0.5">
+      <ul class="list-disc pl-4 sm:pl-5 mt-1 space-y-0.5">
         <li>
-          {{ $t(
-              "pages.about.threshold_score_policy.good.condition_lists.not_nnfs",
-            )
-          }}
+          {{ $t("pages.about.threshold_score_policy.good.condition_lists.not_nnfs") }}
         </li>
         <li>
-          {{ $t(
-              "pages.about.threshold_score_policy.good.condition_lists.for_beginners",
-            )
-          }}
+          {{ $t("pages.about.threshold_score_policy.good.condition_lists.for_beginners") }}
         </li>
         <li>
-          {{ $t(
-              "pages.about.threshold_score_policy.good.condition_lists.for_experienced",
-            )
-          }}
+          {{ $t("pages.about.threshold_score_policy.good.condition_lists.for_experienced") }}
         </li>
       </ul>
     </UCard>
+
     <!-- BIGGER THRESHOLD POLICY -->
-    <UCard class="my-5">
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>
-          <UBadge class="capitalize" variant="subtle" color="secondary">
+        <p class="text-sm sm:text-base font-medium">
+          <UBadge class="capitalize text-xs sm:text-sm" variant="subtle" color="secondary">
             {{ $t("global.threshold_score_names.great") }}
           </UBadge>
           {{ $t("pages.about.threshold_score_policy.title") }}
@@ -167,11 +202,12 @@
         </template>
       </SafeI18nT>
     </UCard>
+
     <!-- SUPER BIG SCORE POLICY -->
-    <UCard class="my-5">
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>
-          <UBadge class="capitalize" variant="subtle" color="success">
+        <p class="text-sm sm:text-base font-medium">
+          <UBadge class="capitalize text-xs sm:text-sm" variant="subtle" color="success">
             {{ $t("global.threshold_score_names.excellent") }}
           </UBadge>
           {{ $t("pages.about.threshold_score_policy.title") }}
@@ -183,99 +219,84 @@
         </template>
       </SafeI18nT>
     </UCard>
+
     <!-- FAQ -->
-    <UCard class="my-5">
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>
+        <p class="text-sm sm:text-base font-medium">
           {{ $t("pages.about.score_FAQ.title") }}
         </p>
       </template>
-      <ul class="pl-5 space-y-0.5">
+      <ul class="pl-3 sm:pl-5 space-y-1 sm:space-y-0.5">
         <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question",
-            )
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.question") }}
         </li>
         <li>
-          {{ $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.answer")
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.th20_fixed_piv.answer") }}
         </li>
         <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.question",
-            )
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.garbage_shot_type.question") }}
         </li>
         <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.garbage_shot_type.answer",
-            )
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.garbage_shot_type.answer") }}
         </li>
         <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.win98_support.question",
-            )
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.question") }}
         </li>
-		<SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.win98_support.answer" tag="li">
-        <template #maribel>
-          <font color="#0693E3"><u><NuxtLink href="https://maribelhearn.com/pc98" target="_blank">
-            {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.tags.maribel") }}
-          </NuxtLink></u></font>
-        </template>
-		</SafeI18nT>
-        <li>
-          {{ $t("pages.about.score_FAQ.good.content.lists.th09_support.question")
-          }}
-        </li>
-        <li>
-          {{ $t("pages.about.score_FAQ.good.content.lists.th09_support.answer")
-          }}
-        </li>
-        <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.publish_my_record.question",
-            )
-          }}
-        </li>
-        <SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.publish_my_record.answer" tag="li">
-          <template #github>
-            <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman/balisman.github.io/issues" target="_blank">
-              {{ $t(
-                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github",
-                )
-              }}
-            </NuxtLink></u></font>
-          </template>
-          <template #balisman>
-            <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
-              {{ $t(
-                  "pages.about.score_FAQ.good.content.lists.publish_my_record.tags.balisman",
-                )
-              }}
-            </NuxtLink></u></font>
+        <SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.win98_support.answer" tag="li">
+          <template #maribel>
+            <font color="#0693E3">
+              <u>
+                <NuxtLink href="https://maribelhearn.com/pc98" target="_blank">
+                  {{ $t("pages.about.score_FAQ.good.content.lists.win98_support.tags.maribel") }}
+                </NuxtLink>
+              </u>
+            </font>
           </template>
         </SafeI18nT>
         <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.update_frequency.question",
-            )
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.th09_support.question") }}
         </li>
         <li>
-          {{ $t(
-              "pages.about.score_FAQ.good.content.lists.update_frequency.answer",
-            )
-          }}
+          {{ $t("pages.about.score_FAQ.good.content.lists.th09_support.answer") }}
+        </li>
+        <li>
+          {{ $t("pages.about.score_FAQ.good.content.lists.publish_my_record.question") }}
+        </li>
+        <SafeI18nT keypath="pages.about.score_FAQ.good.content.lists.publish_my_record.answer" tag="li">
+          <template #github>
+            <font color="#0693E3">
+              <u>
+                <NuxtLink href="https://github.com/Balisman/balisman.github.io/issues" target="_blank">
+                  {{ $t("pages.about.score_FAQ.good.content.lists.publish_my_record.tags.github") }}
+                </NuxtLink>
+              </u>
+            </font>
+          </template>
+          <template #balisman>
+            <font color="#0693E3">
+              <u>
+                <NuxtLink href="https://github.com/Balisman" target="_blank">
+                  {{ $t("pages.about.score_FAQ.good.content.lists.publish_my_record.tags.balisman") }}
+                </NuxtLink>
+              </u>
+            </font>
+          </template>
+        </SafeI18nT>
+        <li>
+          {{ $t("pages.about.score_FAQ.good.content.lists.update_frequency.question") }}
+        </li>
+        <li>
+          {{ $t("pages.about.score_FAQ.good.content.lists.update_frequency.answer") }}
         </li>
       </ul>
     </UCard>
-	
-    <UCard class="my-5">
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.additional_info.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.additional_info.title") }}
+        </p>
       </template>
       <SafeI18nT keypath="pages.about.additional_info.content" tag="p">
         <template #br>
@@ -283,139 +304,181 @@
         </template>
       </SafeI18nT>
     </UCard>
-    <UCard class="my-5">
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.operator.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.operator.title") }}
+        </p>
       </template>
       <SafeI18nT keypath="pages.about.operator.content" tag="p">
         <template #br>
           <br />
         </template>
         <template #balisman>
-          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
-            {{ $t("pages.about.operator.tags.balisman") }}
-          </NuxtLink></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://github.com/Balisman" target="_blank">
+                {{ $t("pages.about.operator.tags.balisman") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
       </SafeI18nT>
     </UCard>
-    <UCard class="my-5">
+
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <p>{{ $t("pages.about.operation_policy.title") }}</p>
+        <p class="text-sm sm:text-base font-medium">
+          {{ $t("pages.about.operation_policy.title") }}
+        </p>
       </template>
       <SafeI18nT keypath="pages.about.operation_policy.content" tag="p">
         <template #br>
           <br />
         </template>
         <template #wefmaika>
-          <font color="#0693E3"><u><NuxtLink href="https://wefma.net" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.wefmaika") }}
-          </NuxtLink></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://wefma.net" target="_blank">
+                {{ $t("pages.about.operation_policy.tags.wefmaika") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
         <template #nyanko>
-          <font color="#0693E3"><u><NuxtLink href="https://x.com/flower874_" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.nyanko") }}
-          </NuxtLink></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://x.com/flower874_" target="_blank">
+                {{ $t("pages.about.operation_policy.tags.nyanko") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
         <template #balisman>
-          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.balisman") }}
-          </NuxtLink></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://github.com/Balisman" target="_blank">
+                {{ $t("pages.about.operation_policy.tags.balisman") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
         <template #github>
-          <font color="#0693E3"><u><NuxtLink href="https://github.com/Balisman/balisman.github.io" target="_blank">
-            {{ $t("pages.about.operation_policy.tags.github") }}
-          </NuxtLink></u></font>
+          <font color="#0693E3">
+            <u>
+              <NuxtLink href="https://github.com/Balisman/balisman.github.io" target="_blank">
+                {{ $t("pages.about.operation_policy.tags.github") }}
+              </NuxtLink>
+            </u>
+          </font>
         </template>
       </SafeI18nT>
     </UCard>
   </UContainer>
 </template>
+
 <script setup lang="ts">
-  import {
-    useGames
-  } from "#imports";
-  const gamesMap = useGames();
-  const gameThresholds: Ref < Array < {
-    game: string;great: string;good: string
-  } > > = ref([{
+import { useGames } from "#imports";
+
+const gamesMap = useGames();
+
+const gameThresholds: Ref<Array<{ game: string; great: string; good: string; excellent: string }>> = ref([
+  {
     game: "th06",
     excellent: "pages.about.thresholds.th06.excellent",
     great: "pages.about.thresholds.th06.great",
     good: "pages.about.thresholds.th06.good",
-  }, {
+  },
+  {
     game: "th06NC",
     excellent: "pages.about.thresholds.th06NC.excellent",
     great: "pages.about.thresholds.th06NC.great",
     good: "pages.about.thresholds.th06NC.good",
-  }, {
+  },
+  {
     game: "th07Ex",
     excellent: "pages.about.thresholds.th07_ex.excellent",
     great: "pages.about.thresholds.th07_ex.great",
     good: "pages.about.thresholds.th07_ex.good",
-  }, {
+  },
+  {
     game: "th07Ph",
     excellent: "pages.about.thresholds.th07_ph.excellent",
     great: "pages.about.thresholds.th07_ph.great",
     good: "pages.about.thresholds.th07_ph.good",
-  }, {
+  },
+  {
     game: "th08",
     excellent: "pages.about.thresholds.th08.excellent",
     great: "pages.about.thresholds.th08.great",
     good: "pages.about.thresholds.th08.good",
-  }, {
+  },
+  {
     game: "th10",
     excellent: "pages.about.thresholds.th10.excellent",
     great: "pages.about.thresholds.th10.great",
     good: "pages.about.thresholds.th10.good",
-  }, {
+  },
+  {
     game: "th11",
     excellent: "pages.about.thresholds.th11.excellent",
     great: "pages.about.thresholds.th11.great",
     good: "pages.about.thresholds.th11.good",
-  }, {
+  },
+  {
     game: "th12",
     excellent: "pages.about.thresholds.th12.excellent",
     great: "pages.about.thresholds.th12.great",
     good: "pages.about.thresholds.th12.good",
-  }, {
+  },
+  {
     game: "th128",
     excellent: "pages.about.thresholds.th128.excellent",
     great: "pages.about.thresholds.th128.great",
     good: "pages.about.thresholds.th128.good",
-  }, {
+  },
+  {
     game: "th13",
     excellent: "pages.about.thresholds.th13.excellent",
     great: "pages.about.thresholds.th13.great",
     good: "pages.about.thresholds.th13.good",
-  }, {
+  },
+  {
     game: "th14",
     excellent: "pages.about.thresholds.th14.excellent",
     great: "pages.about.thresholds.th14.great",
     good: "pages.about.thresholds.th14.good",
-  }, {
+  },
+  {
     game: "th15",
     excellent: "pages.about.thresholds.th15.excellent",
     great: "pages.about.thresholds.th15.great",
     good: "pages.about.thresholds.th15.good",
-  }, {
+  },
+  {
     game: "th16",
     excellent: "pages.about.thresholds.th16.excellent",
     great: "pages.about.thresholds.th16.great",
-    good: "pages.about.thresholds.th16.great",
-  }, {
+    good: "pages.about.thresholds.th16.good",
+  },
+  {
     game: "th17",
     excellent: "pages.about.thresholds.th17.excellent",
     great: "pages.about.thresholds.th17.great",
     good: "pages.about.thresholds.th17.good",
-  }, {
+  },
+  {
     game: "th18",
     excellent: "pages.about.thresholds.th18.excellent",
     great: "pages.about.thresholds.th18.great",
-    good: "pages.about.thresholds.th08.good",
-  }, {
+    good: "pages.about.thresholds.th18.good",
+  },
+  {
     game: "th20",
     excellent: "pages.about.thresholds.th20.excellent",
     great: "pages.about.thresholds.th20.great",
     good: "pages.about.thresholds.th20.good",
-  }, ]);
+  },
+]);
 </script>
