@@ -73,6 +73,7 @@
       ref="table"
       :data="scoreRecords"
       :columns="columns"
+      :ui="{ th: 'text-xs sm:text-sm md:text-base font-medium' }"
       class="flex-1 text-xs sm:text-sm md:text-base"
     />
   </UContainer>
@@ -308,6 +309,8 @@ const table = ref<any>(null); // UTable の ref
 
 import { reactive, watch, nextTick } from "vue"; // nextTick もここでインポート
 
+const headerBtnClass = "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm md:text-base font-medium";
+
 const columns = reactive([
   {
     accessorKey: "game",
@@ -347,7 +350,7 @@ const columns = reactive([
         variant: "ghost",
         label: t("global.table_headers.score"),
         icon,
-        class: "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm md:text-base",
+        class: headerBtnClass,
         onClick: () => {
           if (sortState === false) {
             // デフォルト状態 → 降順スタート
@@ -385,7 +388,7 @@ const columns = reactive([
             ? "i-lucide-arrow-down-wide-narrow"
             : "i-lucide-arrow-up-narrow-wide"
           : "i-lucide-arrow-up-down",
-        class: "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm md:text-base",
+        class: headerBtnClass,
         onClick: () => {
           const current = column.getIsSorted();
           if (!current) {
@@ -410,7 +413,8 @@ const columns = reactive([
       return h(
         UBadge,
         {
-          class: "capitalize text-[11px] sm:text-xs md:text-sm",
+          size: "xs",
+          class: "capitalize px-1.5 py-0.5 text-[10px] sm:text-xs md:text-xs",
           variant: "subtle",
           color: colorMap[status],
         },
@@ -467,7 +471,7 @@ const columns = reactive([
             ? "i-lucide-arrow-up-narrow-wide"
             : "i-lucide-arrow-down-wide-narrow"
           : "i-lucide-arrow-up-down",
-        class: "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm md:text-base",
+        class: headerBtnClass,
         onClick: () => {
           const current = column.getIsSorted();
           if (!current) {
