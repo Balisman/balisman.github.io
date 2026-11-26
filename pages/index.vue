@@ -1,8 +1,8 @@
 <template>
-  <UContainer>
-    <UCard class="my-5">
+  <UContainer class="px-3 sm:px-6 py-3 sm:py-6 text-xs sm:text-sm md:text-base">
+    <UCard class="my-3 sm:my-5">
       <template #header>
-        <h1 class="text-xl font-bold">{{ $t("pages.index.welcome") }}</h1>
+        <h1 class="text-lg sm:text-xl font-bold">{{ $t("pages.index.welcome") }}</h1>
       </template>
 
       <SafeI18nT keypath="pages.index.description" tag="p">
@@ -12,18 +12,18 @@
       </SafeI18nT>
 
       <template #footer>
-        <p class="text-sm mb-1 font-medium">
+        <p class="text-xs sm:text-sm mb-1 font-medium">
           {{ $t("pages.index.latest_update") }}
           <span class="text-primary-600 dark:text-primary-400 font-semibold">
             v{{ latest.version }}
           </span>
-          <span class="text-xs text-gray-500 ml-1">
+          <span class="text-[11px] sm:text-xs text-gray-500 ml-1">
             {{ fmtDate(latest.date) }}
           </span>
         </p>
 
         <!-- 変更点リスト -->
-        <ul class="list-disc pl-5 space-y-1">
+        <ul class="list-disc pl-4 sm:pl-5 space-y-0.5 sm:space-y-1 text-xs sm:text-sm">
           <li v-for="(change, idx) in latest.changes" :key="idx">
             {{ renderChange(change) }}
           </li>
@@ -31,18 +31,18 @@
       </template>
     </UCard>
 
-    <div class="grid grid-cols-12 gap-4 my-5">
+    <div class="grid grid-cols-12 gap-2.5 sm:gap-4 my-3 sm:my-5">
       <!-- 左側（UInput + UButton） -->
-      <div class="col-span-12 md:col-span-6 flex gap-2">
+      <div class="col-span-12 md:col-span-6 flex gap-1.5 sm:gap-2">
         <UInput
           :placeholder="$t('pages.index.placeholder_player')"
-          class="flex-1 max-w-[12rem]"
+          class="flex-1 max-w-[9.5rem] sm:max-w-[12rem] text-xs sm:text-sm"
           v-model="inputtedPlayer"
           @keydown.enter="searchPlayer"
         />
         <UButton
           icon="i-lucide-search"
-          size="md"
+          class="h-8 w-8 sm:h-9 sm:w-9 justify-center"
           color="primary"
           variant="solid"
           @click="searchPlayer"
@@ -50,15 +50,15 @@
       </div>
 
       <!-- 右側（USelect x2） -->
-      <div class="col-span-12 md:col-span-6 flex gap-2">
+      <div class="col-span-12 md:col-span-6 flex gap-1.5 sm:gap-2">
         <USelect
-          class="w-1/2"
+          class="w-1/2 text-xs sm:text-sm"
           v-model="selectedGameId"
           :items="gameOptions"
           :placeholder="$t('pages.index.placeholder_game')"
         />
         <USelect
-          class="w-1/2"
+          class="w-1/2 text-xs sm:text-sm"
           v-model="selectedShotTypeId"
           :items="shotTypeOptions"
           :placeholder="$t('pages.index.placeholder_shot_type')"
@@ -66,8 +66,14 @@
       </div>
     </div>
 
-    <USeparator class="mb-5" />
-    <UTable :key="tableKey" ref="table" :data="scoreRecords" :columns="columns" class="flex-1" />
+    <USeparator class="mb-3 sm:mb-5" />
+    <UTable
+      :key="tableKey"
+      ref="table"
+      :data="scoreRecords"
+      :columns="columns"
+      class="flex-1 text-xs sm:text-sm"
+    />
   </UContainer>
 </template>
 
@@ -309,7 +315,7 @@ const columns = reactive([
       h(
         UBadge,
         {
-          class: "capitalize inline-block px-2 py-0.5 rounded font-semibold",
+          class: "capitalize inline-block px-1.5 sm:px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs",
           style: {
             color: gamesMap[row.getValue("game")]?.color?.txt ?? "#000",
             backgroundColor: gamesMap[row.getValue("game")]?.color?.bg ?? "#fff",
@@ -340,7 +346,7 @@ const columns = reactive([
         variant: "ghost",
         label: t("global.table_headers.score"),
         icon,
-        class: "-mx-2.5",
+        class: "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm",
         onClick: () => {
           if (sortState === false) {
             // デフォルト状態 → 降順スタート
@@ -378,7 +384,7 @@ const columns = reactive([
             ? "i-lucide-arrow-down-wide-narrow"
             : "i-lucide-arrow-up-narrow-wide"
           : "i-lucide-arrow-up-down",
-        class: "-mx-2.5",
+        class: "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm",
         onClick: () => {
           const current = column.getIsSorted();
           if (!current) {
@@ -402,7 +408,11 @@ const columns = reactive([
       };
       return h(
         UBadge,
-        { class: "capitalize", variant: "subtle", color: colorMap[status] },
+        {
+          class: "capitalize text-[11px] sm:text-xs",
+          variant: "subtle",
+          color: colorMap[status],
+        },
         () => txtMap[status]
       );
     },
@@ -456,7 +466,7 @@ const columns = reactive([
             ? "i-lucide-arrow-up-narrow-wide"
             : "i-lucide-arrow-down-wide-narrow"
           : "i-lucide-arrow-up-down",
-        class: "-mx-2.5",
+        class: "-mx-1.5 sm:-mx-2.5 text-xs sm:text-sm",
         onClick: () => {
           const current = column.getIsSorted();
           if (!current) {
